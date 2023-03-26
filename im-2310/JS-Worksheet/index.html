@@ -672,7 +672,16 @@
         this.style.backgroundColor = 'orange';
       </code>
 
-      <div id="demo4"></div>
+      <!-- Shown as class demo 23/03/2023 3pm-->
+      <script>
+        
+        console.log(this.style.backgroundColor = 'orange');
+
+      </script>
+
+
+      <div id="demo4" onmouseenter="this.style.backgroundColor = 'orange';" onmouseleave="this.style.backgroundColor = 'hotpink';"></div>
+      <div id="demo4" onmousedown="this.style.backgroundColor = 'violet';"></div>
 
     </section>
 

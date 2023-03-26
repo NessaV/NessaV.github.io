@@ -6,21 +6,34 @@
 
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HTML Basics</title>
+    <title>new title HTML Basics</title>
 
     <style>
-      /* 
       .sections{
-        padding: 20px;
-        padding-top: 10px;
-        border: 10px double white;
+        padding: 20px;  /* from the left of each section */
+        padding-top: 10px;  /* from the top of each section */
+        border: 10px double white;  /* the border of each section */
       } 
-      */
+     
     </style>
 
 </head>
 
 <body>
+  <h3>LOG</h3>
+  <section style="background-color: darkslategray;" id="log" class="sections">
+    
+    <p>
+
+      <ul>
+        <li>worksheet tasks started @23/03/2023</li>
+        <li>all worksheet tasks done @26/03/2023</li>
+      </ul>
+
+    </p>
+    
+  </section>
+
 
   <h1>HTML Basics</h1>
 
@@ -98,7 +111,7 @@
     </p>
 
     <p style="background-color:darkseagreen; filter: invert();">
-      <strong>Task:</strong> Open the boilerplate folder from last week and add in a <strong>&lt;title&gt;</strong> tag with whatever title you like inside of the <strong>&lt;head&gt;</strong> tag. If you're having 
+      <strong>DONE  Task:</strong> Open the boilerplate folder from last week and add in a <strong>&lt;title&gt;</strong> tag with whatever title you like inside of the <strong>&lt;head&gt;</strong> tag. If you're having 
       difficulty getting it to work check the <strong>&lt;head&gt;</strong> tag from the code for this page for an example.
     </p>
 
@@ -138,14 +151,20 @@
     <p>
       It is standard practice to use lowercase text for HTML tags and to indent one tab or two spaces to help show the relationship between <strong>parent</strong> and 
       <strong>child</strong> elements when placing a HTML element inside another - as you can see in the boilerplate code picture above or the source code for this page. This 
-      formatting helps you to quickly read your code. People get very passionate about using either spaces or tabs for indents - just pick one and be consistent.
+      formatting helps you to quickly read your code. People get very passionate about using either spaces or tabs for indents - just pick one and be consistent.  <br>
+      <br>me: <i>roger that!</i>
     </p>
 
   </section>
 
-  <section style="background-color:gold;" id="" class="sections">
+  <!-- Adding the ID, so the section can be referenced or linked to -->
+  <section style="background-color:gold;" id="basic-elements" class="sections">
 
     <h2>Basic Elements</h2>
+
+    <!-- looking for the id, and then href takes you there -->
+
+    <a href="#block-and-inline">Jump back to ID and Class</a>
 
     <p>
       The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">list of supported HTML elements</a> is quite long, so to start with let's cover 
@@ -153,27 +172,28 @@
     </p>
 
     <p style="background-color:gold; filter: invert();">
-      <strong>Task:</strong> Test and identify the elements below by writing some text inside of the empty elements in the source code for this page. Try and work it out 
+      <strong>DONE  Task:</strong> Test and identify the elements below by writing some text inside of the empty elements in the source code for this page. Try and work it out 
       through experimentation and then write what each of them do inside their tags. If you get stuck you can refer to the above link for explanations of each element.
     </p>
 
       <p style="color:red;">&lt;h1&gt; to &lt;h6&gt;</p>
       <!-- write the element name inside the empty elements like the one directly below this -->
-      <h1></h1>
-      <h2></h2>
-      <h3></h3>
-      <h4></h4>
-      <h5></h5>
-      <h6></h6>
+      <h1>h1  (heading 1)  the biggest</h1>
+      <h2>h2  (heading 2)</h2>
+      <h3>h3  (heading 3)</h3>
+      <h4>h4  (heading 4)</h4>
+      <h5>h5  (heading 5)</h5>
+      <h6>h6  (heading 6)  the smallest</h6>
+      <h7>there are no header styles beyond h6 (h7? nope) </h7>
 
       <p style="color:red;">&lt;p&gt;</p>
-      <p></p>
+      <p>new paragraph</p>
 
       <p style="color:red;">&lt;i&gt;</p>
-      <i></i>
+      <i>italics</i>
 
       <p style="color:red;">&lt;em&gt;</p>
-      <em></em>
+      em is <em>(stress) emphasis  - when speaking, stressing on words or syllables, to convey different meaning</em>
 
       <p>
         🕵️ &lt;i&gt; & &lt;em&gt; have the same style, so why are they two different elements? Read an explanation 
@@ -182,10 +202,10 @@
       
 
       <p style="color:red;">&lt;b&gt;</p>
-      <b></b>
+      <b>bold</b>
 
       <p style="color:red;">&lt;strong&gt;</p>
-      <strong></strong>
+      <strong>strong   strong importance, e.g. keywords, important points (notice how those extra whitespaces haven't appeared?)</strong>
 
       <p>
         &lt;b&gt; & &lt;strong&gt; have a similar relationship as above. Read their explanation 
@@ -193,13 +213,13 @@
       </p>
 
       <p style="color:red;">&lt;del&gt;</p>
-      <del></del>
+      <del>delete?  ah, so strikethrough</del> can help show changes, e.g. hello <del>my name is</del> I'm a new change.
 
       <p style="color:red;">&lt;sup&gt;</p>
-      <sup></sup>
+      this is <sup>superscript</sup>
 
       <p style="color:red;">&lt;sub&gt;</p>
-      <sub></sub>
+      this is <sub>subscript</sub>
 
       <p style="color:red;">&lt;u&gt;</p>
       <u></u>
@@ -218,12 +238,12 @@
 
       <p style="color:red;">&lt;ul&gt;</p>
       <ul>
-        <li></li>
+        <li><strong>unordered</strong> list item</li>
       </ul>
 
       <p style="color:red;">&lt;ol&gt;</p>
       <ol>
-        <li></li>
+        <li><strong>ordered</strong> list item</li>
       </ol>
     <p>
       <strong>Tip</strong> - Remember that HTML is designed specifically for information design and knowing which tag does what will give you a head start on the 
@@ -282,10 +302,10 @@
       </p>
 
       <p style="background-color:palegreen; filter: invert();">
-        <strong>Task:</strong> Try adding an external URL to the href attribute in the &lt;a&gt; element below in the source code for this page.
+        <strong>DONE  Task:</strong> Try adding an external URL to the href attribute in the &lt;a&gt; element below in the source code for this page.
       </p>
       
-      <a href="" target="_blank">test link</a>
+      <a href="https://github.com/NessaV/NessaV.github.io/tree/main/im-2310" target="_blank">test link - to my github</a>
 
       <p>
         <span style="color:red;">&lt;img&gt;</span> elements are used to display images of various formats (such as .jpg .png or .svg) and require a few different attributes to 
@@ -317,7 +337,7 @@
       </p>
 
       <p style="background-color:palegreen; filter: invert();">
-        <strong>Task:</strong> Fill out the <strong>src</strong> and <strong>alt</strong> attributes in the empty &lt;img&gt; element below this in the source code for 
+        <strong>DONE  Task:</strong> Fill out the <strong>src</strong> and <strong>alt</strong> attributes in the empty &lt;img&gt; element below this in the source code for 
         this page. Use a relative link to the file called smiling-dog-captcha.png for the <strong>src</strong> and write a description in your own words for the <strong>alt</strong>.
         <br />
         <em>Hint</em> - src and href attributes both take the same type of URL value - if you get stuck look for other examples of a working &lt;img&gt; element elsewhere in the source 
@@ -325,7 +345,9 @@
         <a href="https://www.w3.org/WAI/tutorials/images/" target="_blank">this comprehensive guide</a>.
       </p>
 
-      <img src="" alt="">
+      
+      <img src="./images/smiling-dog-captcha.png" alt="a captcha puzzle, where you must select only the images of a dog smiling">
+      <img src="./images/smiling-dog-captch.png" alt="(when the image can't be loaded) a captcha puzzle, where you must select only the images of a dog smiling">
 
   </section>
 
@@ -345,7 +367,7 @@
     </p>
 
     <p style="background-color:lightsalmon; filter: invert();">
-      <strong>Task:</strong> The link below is using an element's id attribute instead of a URL - instead of jumping to another web page or piece of media this will instead scroll the web page 
+      <strong>DONE  Task:</strong> The link below is using an element's id attribute instead of a URL - instead of jumping to another web page or piece of media this will instead scroll the web page 
       to where the element with the matching id is. Look for the opening tag of the previous &lt;section&gt; element that contains the list of basic HTML elements in the source code for this page - it should have an 
       empty id attribute. Give this element the id of "basic-elements" (needs to match exactly, no capitals) then try clicking on the link below - it should now move the page up to so you can see that 
       section of the page.
@@ -360,7 +382,7 @@
     </p>
 
     <p style="background-color:lightsalmon; filter: invert();">
-      <strong>Task:</strong> Each &lt;section&gt; element on the page not only has a unique id but is also assigned the class "sections" - near the top of the HTML document (lines 11-21) you'd find 
+      <strong>DONE  Task:</strong> Each &lt;section&gt; element on the page not only has a unique id but is also assigned the class "sections" - near the top of the HTML document (lines 11-21) you'd find 
       a &lt;style&gt; element containg a small piece of CSS designed to change the look of everything using the "sections" class. The code is currently not working as it is what's called commented out 
       (more information on this shortly) - try uncommenting the code by deleting the /* on line 12 and the */ on line 18 - it should change what the "sections" elements look like.
       <br />
@@ -398,11 +420,20 @@
     </p>
 
     <p style="background-color:lightgray; filter: invert();">
-      <strong>Task:</strong> Inside the &lt;p&gt; tag below this one there is an <strong>inline</strong> &lt;span&gt; element - try changing the tag so it's a &lt;div&gt; instead and notice 
+      <strong>DONE  Task:</strong> Inside the &lt;p&gt; tag below this one there is an <strong>inline</strong> &lt;span&gt; element - try changing the tag so it's a &lt;div&gt; instead and notice 
       how it changes how the text is displayed on the webpage.
     </p>
     
     <p>This is some test writing so you can see <span>how elements react</span> to being either inline or block.</p>
+
+    <p><b>this is some <div>div div</div> text (interesting, it becomes separate lines?)</b></p>
+    <p><b>this is some <span>span span</span> text (still on same line)</b></p>
+
+    -----
+    <h3>MY NOTES</h3>
+    <p><strong>div</strong> is <em>block-level</em> organisation / styling</p>
+    <p><strong>span</strong> is <em>inline</em> organsiation / styling </p>
+    -----
 
     <p>All elements have default ways they are displayed - the most common are <strong>block</strong> and <strong>inline</strong> but there are others we will cover later this semester.</p>
 
@@ -436,9 +467,24 @@
       <p>The &lt;video&gt; element works in much the same way and makes use of both src and controls attributes.</p>
 
       <p style="background-color:plum; filter: invert();">
-        <strong>Task:</strong> Create a video element in the source code below the audio element - set the src to the file in the videos folder and then give it default controls like the 
+        <strong>DONE  Task:</strong> Create a video element in the source code below the audio element - set the src to the file in the videos folder and then give it default controls like the 
         &lt;audio&gt; element.
       </p>
+      
+      <br>
+      <h3>New audio source element</h3>
+      <audio src="./sounds/meral__celtic_meral.wav" controls></audio>
+      <p>
+        <div>by <a href="https://freesound.org/people/Meral/"><strong>Meral</strong></a> from <strong>freesound.org</strong></div>
+        <div><span style="color:saddlebrown">found at</span> <a href="https://freesound.org/s/104588/">https://freesound.org/s/104588/</a></div>
+        <div>under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0 License</a></div>
+
+        reference: <a href="https://www.w3schools.com/tags/tag_span.asp">w3schools '<'span'>'</a>
+      </p>
+      
+      <h3>New video source element</h3>
+      <video src="./videos/inkloop.mp4" controls></video>
+
 
   </section>
 
@@ -460,7 +506,7 @@
       </p>
 
       <p style="background-color:aliceblue; filter: invert();">
-        <strong>Task:</strong> Add a comment above each element inside the &lt;head&gt; element of your boilerplate's index.html briefly explaining what they do.</p>
+        <strong>DONE  Task:</strong> Add a comment above each element inside the &lt;head&gt; element of your boilerplate's index.html briefly explaining what they do.</p>
 
   </section>
 
