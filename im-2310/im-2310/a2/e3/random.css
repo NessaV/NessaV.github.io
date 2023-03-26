@@ -1,0 +1,13 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    color:darkslategrey;
+    text-align: left;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
