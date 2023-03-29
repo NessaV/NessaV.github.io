@@ -239,3 +239,8 @@ p {
   /* space-around vs space-between  
   https://www.educative.io/answers/how-to-space-items-using-justify-content */
 }
+
+.my-notes {
+  font-size: 1rem;
+  font-style: italic;
+}
