@@ -1,0 +1,53 @@
+body {
+    background-color: #e8e7e1;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    font-size: 18px;
+
+    margin: 50px; /* adds margin all-around */
+
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    color:#313242;
+    text-align: left;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    font-size: 24px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    font-size: 20px;
+    color: #121212;
+}
+
+ul {
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    font-size: 18px;
+    color: #121212;    
+}
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    font-size: 18px;
+    color: #121212;     
+}
+
+
+/* class for Box Sections  (29/03/2023)*/
+.section-box {
+    max-width: 80%;
+    display: block;
+
+    padding: 25px;
+    overflow: auto;
+
+    background-color: aliceblue;
+    border-style:inset;
+    border-color:azure
+    
+}
