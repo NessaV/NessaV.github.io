@@ -10,6 +10,10 @@
 
   <link rel="icon" type="image/png" href="favicons/favicon-32x32.png">
 
+  <!-- TASK #10 Part A-->
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <!-- When the above line is in play
+    The <style> box? below will override the external/linked stylesheet -->
 
     <style>
 
@@ -48,9 +52,9 @@
 
   </style> 
 
-
-
+  <!-- TASK #10 Part B-->
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- When placed here, the linked stylesheet overrides the HTML internal styles -->
 
 
 </head>
@@ -191,7 +195,7 @@
     <br>
 
     <p class="task-highlight">
-      <strong>Task:</strong> Open your style.css file in VS Code alongside your HTML and look for the ruleset for each section's container on lines 130 - 142. Try 
+      <strong>DONE  Task:</strong> Open your style.css file in VS Code alongside your HTML and look for the ruleset for each section's container on lines 130 - 142. Try 
       changing the word solid on line 134 to the word groove then save your file and see how it has changed the style of the page in the browser. Now try adding a new 
       rule inside the brackets by adding a new line just below the overflow property - we can change the font within each section by using the property font-family and 
       a value of a name of a font - in this case 'Work Sans'. Your new line of CSS should look like this: 
@@ -200,6 +204,15 @@
     <code>
       font-family: 'Work Sans';
     </code>
+
+    <p>
+      <ul>
+        <li>Change style of Section border</li>
+        <li>Change font style inside each section</li>
+        <br> I couldn't get the Work Sans font family to work, so I used the suggested
+        Lucida Sans, ...
+      </ul>
+    </p>
 
   </section>
 
@@ -245,7 +258,12 @@
     <br>
 
     <p class="task-highlight">
-      <strong>Task:</strong> Add a new ruleset at the bottom of your style.css file that changes the size of the font for all &lt;h1&gt; elements to 80px.
+      <strong>DONE  Task:</strong> Add a new ruleset at the bottom of your style.css file that changes the size of the font for all &lt;h1&gt; elements to 80px.
+    </p>
+    <p>
+      <ul>
+        <li>I added it to the existing h1 selector in the style.css</li>
+      </ul>
     </p>
 
     <br>
@@ -285,12 +303,49 @@
        }
     </code>
 
+    <code class="orange-border">
+      /* HTML */
+      <br>
+      &lt;code class="orange-border"&gt;
+      <br>
+      <br>
+      &lt;/code&gt;
+      <br>
+      <br>
+      <br>
+      /* CSS */
+      <br>
+      .orange-border {
+        <br>
+        &nbsp;&nbsp;border: 2px solid orange;
+      }
+    </code>
+
     <br>
 
     <p class="task-highlight">
-      <strong>Task:</strong> Add a new ruleset at the bottom of your style.css file that adds a 2px solid orange border to all the elements belonging to the 
+      <strong>DONE  Task:</strong> Add a new ruleset at the bottom of your style.css file that adds a 2px solid orange border to all the elements belonging to the 
       orange-border class. After that try adding the class to the &lt;code&gt; tag on line 259 of the HTML document for this page.
     </p>
+    <p>
+      A bit confusing.
+      <ul>
+        How to make a class? And where?
+        <li>.<any_name>{}  seems to define a class, and I can put any uhh attributes? inside
+          like background-color, border, margin, padding, etc.</li>
+
+        <br>
+        Then, making the ruleset in the CSS file
+        <br>
+        OH confusing order.
+        Let's make the ruleset in CSS first. //Done
+        <br>
+        Then the class is specified on line 259 (originally). It's now line 291-ish. 
+        The code block.
+        <li>https://devpractical.com/display-html-tags-as-plain-text/#:~:text=You%20can%20show%20HTML%20tags,the%20reader%20on%20the%20browser.</li>
+      </ul>
+    </p> 
+
 
     <br>
     <hr>
@@ -350,7 +405,7 @@
     <br>
 
     <p id="id-task" class="task-highlight">
-      <strong>Task:</strong> Add a new ruleset at the bottom of your style.css file that changes the background colour of this paragraph to plum. You'll need to 
+      <strong>DONE  Task:</strong> Add a new ruleset at the bottom of your style.css file that changes the background colour of this paragraph to plum. You'll need to 
       check the &lt;p&gt; element's id in the HTML document.
     </p>
 
@@ -361,6 +416,7 @@
       <strong>Multiple selectors</strong> can be used for one ruleset by using a comma seperated list - for example to add a white border to all of the 
       &lt;p&gt; elements, all of the elements belonging to the class called white-border, and the element with the id of my-list you could write:
     </p>
+    
 
     <code>
       /* CSS */
@@ -371,7 +427,10 @@
         <br>
        }
     </code>
-
+    <br>
+    <p>
+      Wow how efficient!
+    </p>
     <br>
     <hr>
 
@@ -395,7 +454,7 @@
     </p>
 
     <p class="task-highlight">
-      <strong>Task:</strong> Try working out what CSS property/value pair will give rounded corners to elements with the section-box class and then add it to the 
+      <strong>DONE  Task:</strong> Try working out what CSS property/value pair will give rounded corners to elements with the section-box class and then add it to the 
       ruleset applied to that class.
     </p>
 
@@ -421,7 +480,7 @@
     </p>
 
     <p class="task-highlight">
-      <strong>Task:</strong> Find the ruleset applied to the &lt;a&gt; elements in this page's style.css file which currently contains a text-decoration property with 
+      <strong>DONE  Task:</strong> Find the ruleset applied to the &lt;a&gt; elements in this page's style.css file which currently contains a text-decoration property with 
       the value of none. Work out what to change this value to so that all the links will instead have a white dotted underline.
     </p>
 
@@ -470,7 +529,7 @@
     </ol>
 
     <p class="task-highlight">
-      <strong>Task:</strong> Move the &lt;link&gt; tag on line 50 of the HTML source code above the opening of the &lt;style&gt; tag and notice how the placment order 
+      <strong>DONE  Task:</strong> Move the &lt;link&gt; tag on line 50 of the HTML source code above the opening of the &lt;style&gt; tag and notice how the placment order 
       can be used to override certain styles.
     </p>
 
@@ -521,7 +580,7 @@
     </p>
 
     <p class="task-highlight">
-      <strong>Task:</strong> Use padding, border and margin to add some spacing to help structure your a1 research project page. If you don't know what values to use 
+      <strong>DONE  Task:</strong> Use padding, border and margin to add some spacing to help structure your a1 research project page. If you don't know what values to use 
       experiment and look online at how this page and other websites use these properties for clear information design.
     </p>
 
@@ -571,6 +630,18 @@
         <br>
        }
     </code>
+    <br>
+    <!-- Testing inline vs block -->
+    <p class="inline-style">this is displayed as <em>inline</em></p>
+    <p class="block-style">this is displayed as <em>block</em></p>
+
+    <p>
+      <br> the difference can't be seen here but
+      <br> 
+      <blockquote>"Block elements always start from a new line. Inline elements never start from a new line. Block elements cover space from left to right as far as it can go. Inline elements only cover the space as bounded by the tags in the HTML element. 23 Jan 2022"
+      </blockquote>
+      <a href="https://www.javatpoint.com/html-blockquote-tag#:~:text=HTML%20tag%20is%20used,quote%20use%20tag.">https://www.javatpoint.com/html-blockquote-tag</a>
+    </p>
 
     <br>
     <hr>
@@ -600,7 +671,7 @@
     </p>
 
     <p class="task-highlight">
-      <strong>Task:</strong> Find the ruleset for the "overflow-meme" class in this page's style.css file and try adding an overflow property with the value of 
+      <strong>DONE  Task:</strong> Find the ruleset for the "overflow-meme" class in this page's style.css file and try adding an overflow property with the value of 
       <em>hidden</em> or <em>auto</em> - notice how each of these values changes the way the element handles overflowing content.
     </p>
 
@@ -625,7 +696,7 @@
     </p>
 
     <p class="task-highlight">
-      <strong>Task:</strong> All of the &lt;img&gt; elements on this page have a float value of right as defined by the element selector in the CSS file. This 
+      <strong>DONE  Task:</strong> All of the &lt;img&gt; elements on this page have a float value of right as defined by the element selector in the CSS file. This 
       can be overridden by assigning a different float value in the inline style attribute in the HTML file. Try changing the float value of this particular 
       &lt;img&gt; to <em>left</em> using inline CSS.
     </p>
@@ -674,7 +745,7 @@
     </p>
 
     <p class="task-highlight">
-      <strong>Task:</strong> Write a CSS ruleset the same as the example above in your style.css file and see how it changes the layout of the item list.
+      <strong>DONE  Task:</strong> Write a CSS ruleset the same as the example above in your style.css file and see how it changes the layout of the item list.
     </p>
 
     <p>

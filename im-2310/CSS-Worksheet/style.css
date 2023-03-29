@@ -57,7 +57,10 @@ code {
 
 h1 {
   max-width: fit-content;
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  /* rem - seems to mean root-em - it give elements a font size relative to the 'root' element 
+  https://blog.hubspot.com/website/css-rem#:~:text=Rem%20(short%20for%20%E2%80%9Croot-,1rem%20will%20also%20equal%2016px.*/
+  font-size: 80px;
   margin: 25px auto;
   margin-bottom: 50px;
   font-family: 'Work Sans';
@@ -74,9 +77,17 @@ h6 {
   border-width: 0 0 3px 0;
 }
 
+/* Task #8 */
 a {
   color: #2cfb5c;
-  text-decoration: none;
+  /* text-decoration: none; */
+
+  text-decoration: underline dotted seashell;
+  /* text-decoration: dotted; */
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration 
+  text-decoration is shorthand for text-decoration  -line/-color/-style/ -thickness
+  */
 }
 
 a:hover {
@@ -87,8 +98,10 @@ a:active {
   color: #fe71be;
 }
 
+/* TASK #13 */
 img {
-  float: right;
+  /* float: right; */
+  float: left;
 }
 
 ul, ol {
@@ -131,7 +144,8 @@ p {
   max-width: 80%;
   display: block;
   background-color:#4d48bd;
-  border-style: solid;
+  /* border-style: solid; */
+  border-style: groove;
   border-color: #e2d5c0;
   border-width: 5px;
   padding: 25px;
@@ -139,6 +153,10 @@ p {
   margin: 0 auto;
   margin-bottom: 50px;
   overflow: auto;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 50px;
+  /* https://www.w3schools.com/css/css3_borders.asp */
 }
 
 #nav-menu a {
@@ -166,6 +184,7 @@ p {
   -webkit-text-stroke-color: #6a62fd;
 }
 
+/* TASK 12*/
 .overflow-meme {
   font-size:64px;
   font-family: unset;
@@ -175,4 +194,48 @@ p {
   padding:0px 3px;
   margin-bottom: 1rem;
   max-width:220px;
+
+  /* hides overflowing content */
+  /* overflow: hidden;  */
+
+  /* can give a scrollbar to see overflowing content*/
+  overflow: auto;
+}
+
+/* Task #6 */
+.orange-border { /* CLASS */
+  border: 2px solid orange;
+}
+
+/* Task #7 */
+/* Selecting the class. Was I meant to select the ID? */
+.task-highlight {
+  /* Checking that it works. The Task Box was already a very similar colour. */
+  /* background-color: yellow; */
+  background-color: plum;
+}
+
+/* Selecting the ID. It seems only that one task box has the ID. */
+#id-task { /* ID */
+  background-color: aqua;
+}
+
+/* Testing inline vs block */
+.inline-style {
+  display: inline;
+}
+
+.block-style {
+  display: block;
+}
+
+/* TASK 14 */
+.flex-container-example {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  /* space-around vs space-between  
+  https://www.educative.io/answers/how-to-space-items-using-justify-content */
 }
