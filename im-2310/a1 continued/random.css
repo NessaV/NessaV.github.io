@@ -37,13 +37,73 @@ li {
     color: #121212;     
 }
 
+/* thanks to Patrick's CSS Worksheet */
+/* styling for the Navigation Menu and a links (29/03/2023) */
 
-/* class for Box Sections  (29/03/2023)*/
-.section-box {
+/* A flexible container/box */
+/* Doesn't seem to be used in the same way as on here
+   https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+#nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 80%;
+
+    /* padding-left: 50px; */
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* A box for each item in nav menu, i think */
+#nav-menu a {
     max-width: 80%;
     display: block;
 
-    padding: 25px;
+    background-color: rgb(252, 215, 182);
+    color: #1693bd;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px;
+    
+    font: bold 1.5rem 'Segoe UI';
+    text-decoration: underline dashed;
+}
+
+/*  :hover  --> when you move and leave the cursor on the item */
+#nav-menu a:hover {
+    background-color: rgb(252, 215, 182);
+    color: rgb(46, 80, 114);
+}
+
+/* :active  --> When you click/hold down click the item */
+#nav-menu a:active {
+    color: rgb(244, 95, 177);
+}
+
+
+a {
+    color: rgb(42, 183, 136);
+    text-decoration: underline dotted rgb(43, 130, 101);;
+}
+
+/*  :hover  --> when you move and leave the cursor on the item */
+a:hover {
+    color: rgb(40, 92, 75);
+}
+
+/* :active  --> When you click/hold down click the item */
+a:active {
+    color: rgb(244, 95, 177);
+}
+
+
+/* class for Box Sections  (29/03/2023)*/
+.section-box {
+    max-width: 100%;
+    display: block;
+
+    padding: 50px;
     overflow: auto;
 
     background-color: aliceblue;
