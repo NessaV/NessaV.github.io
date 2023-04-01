@@ -223,12 +223,45 @@
 
       <p class="my-notes">
         Q1. Is 'document' an element? Which line creates it as an element? Or does it already exist??
+        <br>https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
       </p>
 
       <p>JavaScript can change the style of an HTML element</p>
       <p id="textSize">I am linked to the buttons below!</p>
       <button type="button" onclick="document.getElementById('textSize').style.fontSize='20px'">Click to Enlarge text!</button>
       <button type="button" onclick="document.getElementById('textSize').style.fontSize='12px'">Click to Reduce text</button>
+
+
+      <p id="showHideHTML">JavaScript can hide HTML elements & show hidden HTML elements</p>
+      <p>
+        <button type="button" onclick="document.getElementById('showHideHTML').style.display='none'">Click to Hide text</button>
+        <button type="button" onclick="document.getElementById('showHideHTML').style.display='block'">Click to Show text</button>
+        <!-- REF: https://www.w3schools.com/jsref/prop_style_display.asp -->
+      </p>
+
+
+      <!-- How to show/hide an image?
+      https://stackoverflow.com/questions/15318357/show-hide-image-with-javascript -->
+      <!-- <button type="button" onclick=showImage(myImage)></button> -->
+      <img id="myImageId" src="./images/pic_bulboff.gif" style="width:100px">
+     
+      <p>#1 Simple solution. Function shows image.</p>
+      <!-- <a href="javascript:showImage('myImageId')">Show image only</a> -->
+      <p class="my-notes">
+        Q2. It doesn't seem to be working. But Solution 2 works. I don't remember how to debug.
+      </p>
+      <a href="javascript:showImage()">Show image only</a>
+      <button type="button" onclick="javascript:showImage('myImageId')">Show image</button>
+
+
+      <p>#2 Advanced solution. One function, to show or hide image.</p>
+      <!-- <a href="javascript:setImageVisible('myImageId', true)">show image</a>
+      <a href="javascript:setImageVisible('myImageId', false)">hide image</a> -->
+      
+      <button type="button" onclick="javascript:setImageVisible('myImageId', true)">Show image</button>
+      <button type="button" onclick="javascript:setImageVisible('myImageId', false)">Hide image</button>
+
+
 
     </section>
 
