@@ -203,6 +203,33 @@
         on w3schools.
       </p>
 
+      <!-- From w3schools  https://www.w3schools.com/js/js_intro.asp -->
+      <p>
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "I&apos;ve been clicked."' 
+        ondblclick='document.getElementById("demo").innerHTML = "You double clicked me!"'>Click / Double Click Me!</button>
+      </p>
+
+      <p id="lightbulb">JavaScript can change HTML attribute values.</p>
+
+      <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+      <button onclick="document.getElementById('myImage').src='./images/pic_bulbon.gif'">Turn on the light</button>
+
+      <img id="myImage" src="./images/pic_bulboff.gif" style="width:50px">
+
+      <button onclick="document.getElementById('myImage').src='./images/pic_bulboff.gif'">Turn off the light</button>
+
+      <p class="my-notes">
+        Q1. Is 'document' an element? Which line creates it as an element? Or does it already exist??
+      </p>
+
+      <p>JavaScript can change the style of an HTML element</p>
+      <p id="textSize">I am linked to the buttons below!</p>
+      <button type="button" onclick="document.getElementById('textSize').style.fontSize='20px'">Click to Enlarge text!</button>
+      <button type="button" onclick="document.getElementById('textSize').style.fontSize='12px'">Click to Reduce text</button>
+
     </section>
 
     <section id="where" class="sections">
