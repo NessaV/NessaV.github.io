@@ -29,19 +29,41 @@
 }
 
 /* top-left */
+/* 
+    I had the idea for a sunset aethetic. 
+    Lots of verying shades of pink, pink-reds.
+    It doesn't look like a sunset, right now.
+*/
 .box1 {
     grid-column: 1/6;
     grid-row: 1/10;
+    background: linear-gradient(
+        135deg, 
+        rgb(125, 13, 63) 0%, 
+        rgb(193, 92, 166) 35%, 
+        rgb(65, 19, 51) 85%);
+
 }
 /* top-middle */
 .box2 {
     grid-column: 6/8;
     grid-row: 3/12;
+    background: linear-gradient(
+        135deg, 
+        rgb(65, 19, 51) 0%,
+        rgb(125, 13, 63) 70%, 
+        rgb(193, 92, 166) 100%);
 }
 /* top-right */
 .box3 {
     grid-column: 8/12;
     grid-row: 3/13;
+    background: linear-gradient(
+        135deg, 
+        rgb(193, 92, 166) 0%,
+        rgb(125, 13, 63) 60%,
+        rgb(65, 19, 51) 90%);
+        
 }
 
 /* bottom-left */
