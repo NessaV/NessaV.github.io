@@ -1,10 +1,15 @@
 /* Grid container */
+/* 
+    REFERENCES
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+    https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
 .wrapper {
     display: grid;
     padding-right: 20px;
-    background-color: bisque;
+    background-color: rgb(252, 225, 191);
     border-style: solid;
-    border-color: aquamarine;
+    border-color: rgb(252, 225, 191);
 
     column-gap: .5em;
     row-gap: .5em;
@@ -19,21 +24,47 @@
     
 }
 
+/* 
+    Discovered that there is RGBA. 
+    A for alpha, which lets you control the opacity of the colour.
+    I wanted to give the white borders of the boxes, a slight opacity.
+    In my browser, the gradients of the box seem to bleed into the border colour.
+    It gives the border colour more uniformity with the gradients.
+*/
 .wrapper > div {
     background-color:rgb(78, 38, 38);
     border-style: solid;
-    border-color: rgb(255, 136, 154);
+    border-width: 4px;
+    /* border-color: rgb(255, 172, 185); */
+    border-color: rgba(255, 255, 255, 0.70);
+    border-width: 5px;
     
     color:rgb(255, 255, 255);
     text-align: center;
 }
 
-/* top-left */
+/* Testing */
+/* .wrapperVer2 > div {
+    background-color:rgb(78, 38, 38);
+    border-style: solid;
+    border-color: rgb(164, 255, 229);
+    border-color: rgb(255, 255, 255, 0.70);
+    
+    color:rgb(255, 255, 255);
+    text-align: center;
+} 
+*/
+
+
 /* 
+        G R A D I E N T   1
     I had the idea for a sunset aethetic. 
     Lots of verying shades of pink, pink-reds.
     It doesn't look like a sunset, right now.
+    This is small ode to the 3D word art and gradients that I used to use,
+    all the time in Microsoft Word and Powerpoint.
 */
+/* top-left */
 .box1 {
     grid-column: 1/6;
     grid-row: 1/10;
@@ -66,18 +97,43 @@
         
 }
 
+/* 
+        G R A D I E N T   2
+    I wanted the bottom half of the boxes to have a different gradient.
+    An electric-blue feel. 
+    Neon colours. Almost cyberpunk-like.
+    To change colours up a bit.
+    
+
+*/
+
 /* bottom-left */
 .box4 {
     grid-column: 1/6;
     grid-row: 17/31;
+    background: linear-gradient(
+        45deg,
+        rgb(11, 47, 69) 0%,
+        rgb(70, 255, 233) 35%,
+        rgb(46, 123, 142) 85%);
 }
 /* bottom-middle */
 .box5 {
     grid-column: 6/8;
     grid-row: 17/31;
+    background: linear-gradient(
+        45deg,
+        rgb(70, 255, 233) 0%,
+        rgb(46, 123, 142) 50%,
+        rgb(11, 47, 69) 100%);
 }
 /* bottom-right */
 .box6 {
     grid-column: 8/12;
     grid-row: 18/31;
+    background: linear-gradient(
+        45deg,
+        rgb(46, 123, 142) 0%,
+        rgb(70, 255, 233) 60%,
+        rgb(11, 47, 69) 90%);
 }
