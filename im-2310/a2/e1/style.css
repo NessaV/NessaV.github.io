@@ -1,91 +1,139 @@
-
-/* Flex Container class */
-/* Parent flex element */
-.flex-container {
-    display: flex;
-    background-color: antiquewhite;
-    align-items: center;
-    
-}
-/* Child of parent flex element, is therefore a flex */
-.flex-container > div {
-    background-color: rgb(211, 177, 255);
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    /* justify-content: space-around; */
-    column-gap: 20px;
-    
-}
-
-.container {
-    display: flex;
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    column-gap: 20px;
-    
-}
-
-
 /* Grid container */
+/* 
+    REFERENCES
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+    https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
 .wrapper {
     display: grid;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: auto;
-    background-color: bisque;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-template-columns: 300px 200px 300px; */
-    grid-template-columns: repeat(10, 1fr);
+    padding-right: 20px;
+    background-color: rgb(252, 225, 191);
+    border-style: solid;
+    border-color: rgb(252, 225, 191);
+
     column-gap: .5em;
     row-gap: .5em;
-    grid-template-rows: 10fr;
-    align-content: stretch;
-    /* space */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+
+    justify-content: center;
+    align-content: center;
+    overflow: auto;
+    min-height: 100vh;
+    min-width: 80vh;
     
 }
 
+/* 
+    Discovered that there is RGBA. 
+    A for alpha, which lets you control the opacity of the colour.
+    I wanted to give the white borders of the boxes, a slight opacity.
+    In my browser, the gradients of the box seem to bleed into the border colour.
+    It gives the border colour more uniformity with the gradients.
+*/
 .wrapper > div {
     background-color:rgb(78, 38, 38);
     border-style: solid;
-    border-color: rgb(255, 136, 154);
+    border-width: 4px;
+    /* border-color: rgb(255, 172, 185); */
+    border-color: rgba(255, 255, 255, 0.70);
+    border-width: 5px;
     
     color:rgb(255, 255, 255);
     text-align: center;
+}
+
+/* Testing */
+/* .wrapperVer2 > div {
+    background-color:rgb(78, 38, 38);
+    border-style: solid;
+    border-color: rgb(164, 255, 229);
+    border-color: rgb(255, 255, 255, 0.70);
     
-}
+    color:rgb(255, 255, 255);
+    text-align: center;
+} 
+*/
 
+
+/* 
+        G R A D I E N T   1
+    I had the idea for a sunset aethetic. 
+    Lots of verying shades of pink, pink-reds.
+    It doesn't look like a sunset, right now.
+    This is small ode to the 3D word art and gradients that I used to use,
+    all the time in Microsoft Word and Powerpoint.
+*/
+/* top-left */
 .box1 {
-    grid-column: 1/5;
-    grid-row: 1/5;
-}
+    grid-column: 1/6;
+    grid-row: 1/10;
+    background: linear-gradient(
+        135deg, 
+        rgb(125, 13, 63) 0%, 
+        rgb(193, 92, 166) 35%, 
+        rgb(65, 19, 51) 85%);
 
-/* middle */
+}
+/* top-middle */
 .box2 {
-    grid-column: 5/7;
-    grid-row: 1/7;
+    grid-column: 6/8;
+    grid-row: 3/12;
+    background: linear-gradient(
+        135deg, 
+        rgb(65, 19, 51) 0%,
+        rgb(125, 13, 63) 70%, 
+        rgb(193, 92, 166) 100%);
+}
+/* top-right */
+.box3 {
+    grid-column: 8/12;
+    grid-row: 3/13;
+    background: linear-gradient(
+        135deg, 
+        rgb(193, 92, 166) 0%,
+        rgb(125, 13, 63) 60%,
+        rgb(65, 19, 51) 90%);
+        
 }
 
-.box3 {
-    grid-column: 7/10;
-    grid-row: 1/8;
-}
+/* 
+        G R A D I E N T   2
+    I wanted the bottom half of the boxes to have a different gradient.
+    An electric-blue feel. 
+    Neon colours. Almost cyberpunk-like.
+    To change colours up a bit.
+    
+
+*/
 
 /* bottom-left */
 .box4 {
-    grid-column: 1/5;
-    grid-row: 7/10;
+    grid-column: 1/6;
+    grid-row: 17/31;
+    background: linear-gradient(
+        45deg,
+        rgb(11, 47, 69) 0%,
+        rgb(70, 255, 233) 35%,
+        rgb(46, 123, 142) 85%);
 }
-
-/* bottom-left */
+/* bottom-middle */
 .box5 {
-    grid-column: 5/8; 
-    grid-row: 7/10;
+    grid-column: 6/8;
+    grid-row: 17/31;
+    background: linear-gradient(
+        45deg,
+        rgb(70, 255, 233) 0%,
+        rgb(46, 123, 142) 50%,
+        rgb(11, 47, 69) 100%);
 }
-
+/* bottom-right */
 .box6 {
-    grid-column: 8/10; 
-    grid-row: 7/10;
+    grid-column: 8/12;
+    grid-row: 18/31;
+    background: linear-gradient(
+        45deg,
+        rgb(46, 123, 142) 0%,
+        rgb(70, 255, 233) 60%,
+        rgb(11, 47, 69) 90%);
 }
