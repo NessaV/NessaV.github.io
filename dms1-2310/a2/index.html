@@ -1,118 +1,141 @@
 <html>
-    <head>
-        <!-- Important information about the website goes here -->
-        <title>A2 for Digital Media Studio 1</title> <!-- appears as the window tab title -->
-    
-        <style>
-            .sections {
-                padding: 10px;
-                border: 10px;
-                border-style: groove;
-                /* border-color: sandy; */
-                background-color: #f0ede3;
-            }
 
-            .row{
-                margin-top: 30px;
-            }
+<head>
+    <!-- Important information about the website goes here -->
+    <title>A2 for Digital Media Studio 1</title> <!-- appears as the window tab title -->
 
-            .left-column{
-                float: left;
-                width: 30%;
-                margin-left: 30px;
-            }
+    <style>
+        .sections {
+            padding: 10px;
+            border: 10px;
+            border-style: groove;
+            /* border-color: sandy; */
+            background-color: #f0ede3;
+        }
 
-            .centre-column{
-                width: 30%;
-                margin: auto;
-            }
+        .row {
+            margin-top: 30px;
+        }
 
-            .right-column{
-                float: right;
-                width: 30%;
-                margin: auto;
-            }
+        .left-column {
+            float: left;
+            width: 30%;
+            margin-left: 30px;
+        }
 
-            .image-container{
-                display: table-cell;
-                vertical-align: middle;
-                margin: auto;
-            }
-        </style>
-    
-    </head>
+        .centre-column {
+            width: 30%;
+            margin: auto;
+        }
 
-    <body>
-        <!-- Content for your website goes here -->
-        
-        <!-- <section id="header" class="sections">
-        <h1>A2 for DMS1 (COMM2749_2310)</h1>
-        
-        <h2>Wow hiiiii</h2>
-        </section>
+        .right-column {
+            float: right;
+            width: 30%;
+            margin: auto;
+        }
 
-        <p>here is a paragraph</p> -->
-        
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            margin: auto;
+        }
+    </style>
 
-        <!-- 
-            img/favicon-ideas-star-20230330.png
-         -->
+</head>
 
-        <!-- Row #1 -->
-        <div class="row">
-            <div class="left-column">
-                <div class="image-container">
-                    <img id="icon1" img src="img/bowarrowA@4x.png" height="200" width="200"></div>
+<body>
+    <script>
+        var sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9;
+        sound1 = sound2 = sound3 = sound4 = sound5 = sound6 = sound7 = sound8 = sound9 = new buzz.sound("./sound/WingsFlapping_20230404.aac");
+
+        // var sound1 = new buzz.sound("./sound/WingsFlapping_20230404.aac");
+
+        window.onload = function () {
+            document.getElementById('icon1').addEventListener('click', function () { sound1.play(); });
+        }
+        window.onload = function () {
+            document.getElementById('icon2').addEventListener('click', function () { sound2.play(); });
+        }
+        window.onload = function () {
+            document.getElementById('icon3').addEventListener('click', function () { sound3.play(); });
+        }
+        window.onload = function () {
+            document.getElementById('icon4').addEventListener('click', function () { sound4.play(); });
+        }
+        window.onload = function () {
+            document.getElementById('icon5').addEventListener('click', function () { sound5.play(); });
+        }
+        window.onload = function () {
+            document.getElementById('icon6').addEventListener('click', function () { sound6.play(); });
+        }
+        window.onload = function () {
+            document.getElementById('icon7').addEventListener('click', function () { sound7.play(); });
+        }
+        window.onload = function () {
+            document.getElementById('icon8').addEventListener('click', function () { sound8.play(); });
+        }
+        window.onload = function () {
+            document.getElementById('icon9').addEventListener('click', function () { sound9.play(); });
+        }
+    </script>
+
+    <!-- Row #1 -->
+    <div class="row">
+        <div class="left-column">
+            <div class="image-container">
+                <img id="icon1" img src="img/bowarrowA@4x.png" height="200" width="200">
             </div>
-            <div class="right-column">
-                <div class="image-container">
-                    <img id="icon3" img src="img/gemstonesA@4x.png" height="200" width="200">
-                </div>
+        </div>
+        <div class="right-column">
+            <div class="image-container">
+                <img id="icon3" img src="img/gemstonesA@4x.png" height="200" width="200">
             </div>
-            <div class="centre-column">
-                <div class="image-container">
-                    <img id="icon2" img src="img/kitsuneA@4x.png" height="200" width="200">
-                </div>
+        </div>
+        <div class="centre-column">
+            <div class="image-container">
+                <img id="icon2" img src="img/kitsuneA@4x.png" height="200" width="200">
             </div>
-        </div> 
+        </div>
+    </div>
 
-        <!--  Row #2 -->
-        <div class="row">
-            <div class="left-column">
-                <div class="image-container">
-                    <img id="icon4" img src="img/spartanA@4x.png" height="200" width="200">
-                </div>
+    <!--  Row #2 -->
+    <div class="row">
+        <div class="left-column">
+            <div class="image-container">
+                <img id="icon4" img src="img/spartanA@4x.png" height="200" width="200">
             </div>
-            <div class="right-column">
-                <div class="image-container">
-                    <img id="icon6" img src="img/pegasusA@4x.png" height="200" width="200">
-                </div>
+        </div>
+        <div class="right-column">
+            <div class="image-container">
+                <img id="icon6" img src="img/pegasusA@4x.png" height="200" width="200">
             </div>
-            <div class="centre-column">
-                <div class="image-container">
-                    <img id="icon5" img src="img/campfireA_1@4x.png" height="200" width="200">
-                </div>
+        </div>
+        <div class="centre-column">
+            <div class="image-container">
+                <img id="icon5" img src="img/campfireA_1@4x.png" height="200" width="200">
             </div>
-        </div> 
+        </div>
+    </div>
 
-        <!-- Row #3 -->
-        <div class="row">
-            <div class="left-column">
-                <div class="image-container">
-                    <img id="icon7" img src="img/potionA@4x.png" height="200" width="200">
-                </div>
+    <!-- Row #3 -->
+    <div class="row">
+        <div class="left-column">
+            <div class="image-container">
+                <img id="icon7" img src="img/potionA@4x.png" height="200" width="200">
             </div>
-            <div class="right-column">
-                <div class="image-container">
-                    <img id="icon9" img src="img/goheiA@4x.png" height="200" width="200">
-                </div>
+        </div>
+        <div class="right-column">
+            <div class="image-container">
+                <img id="icon9" img src="img/goheiA@4x.png" height="200" width="200">
             </div>
-            <div class="centre-column">
-                <div class="image-container">
-                    <img id="icon8" img src="img/anubisA@4x.png" height="200" width="200">
-                </div>
+        </div>
+        <div class="centre-column">
+            <div class="image-container">
+                <img id="icon8" img src="img/anubisA@4x.png" height="200" width="200">
             </div>
-        </div>  
+        </div>
+    </div>
 
-    </body>
+</body>
+
 </html>
