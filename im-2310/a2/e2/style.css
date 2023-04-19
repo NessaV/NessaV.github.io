@@ -12,8 +12,20 @@
 :root{
   --col-01:#222323;
   --col-02:#f0f6f0;
-  --col-03:#5252ff;
-  --col-04:#b6e878;
+
+  /* Filter buttons */
+  --col-03:#bab1b8;
+  --col-04:#ba87af;
+
+  /* Hyperlinks */
+  --col-05:rgb(29, 208, 240);
+  --col-06:rgb(23, 142, 163);
+
+  --col-07:rgb(133, 139, 141);
+
+  /* Attribution */
+  --col-08:rgb(13, 81, 104);
+
   --border: 1px solid var(--col-02);
 }
 
@@ -25,6 +37,10 @@ body{
   padding: 2vw;
 }
 
+a {
+  color: var(--col-06);
+}
+
 /*
   i've set up a basic flexbox for each recipe container - you might want to change some of the 
   flex properties here on the container or on the individual flex items depending on how you want to style them
@@ -33,51 +49,67 @@ body{
   display: flex;
   flex-direction: column;
   border: var(--border);
+  padding: 2vw;
+  /* align-items: center; */
 }
 
-/* .FilterSection{
-
+.FilterSection{
+  display: grid;
+  margin: auto;
+  min-width: 80vh;
+  overflow: auto;
 }
 
 .FilterBox{
-
+  background-color: #383838;
 }
 
 .FilterButton{
-
+  background-color: var(--col-03);
 }
 
 .SelectedFilter{
-  
+  background-color: var(--col-04);
 }
 
 .RecipeLink{
+  color: var(--col-07);
+}
 
+.RecipeLink > a {
+  color: var(--col-05);
 }
 
 .RecipeName{
-
+  font-size: 1.5em;
+  color: rgb(237, 195, 141);
 }
 
 .Author{
-
+  color: rgb(143, 108, 56);
+  font-weight: 200;
 }
 
 .RecipeImageContainer{
-
+  padding: 20px;
+  align-content: center;
 }
 
 .RecipeImg{
+  width: 500px;
+  /* padding: 20px; */
 
 }
 
 .Attribution{
-
+  font-size: 0.8em;
+  font-style: italic;
+  color: var(--col08);
 }
 
-.Publisher{
+/* .Publisher{
 
-}
+} */
 
 .Cuisine{
 
@@ -104,7 +136,7 @@ body{
 }
 
 .DatePublished{
-
+  color: var(--col-07);
 }
 
 .DateUpdated{
@@ -112,6 +144,6 @@ body{
 }
 
 .SpecialEquipment{
-
-} */
+  color: var(--col-07);
+}
 
