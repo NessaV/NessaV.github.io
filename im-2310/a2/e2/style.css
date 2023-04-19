@@ -10,7 +10,10 @@
 /* https://lospec.com/palette-list/1bit-monitor-glow */
 /* you're welcome to change the colours if you want or any of the other general page style */
 :root{
+  /* Background colour*/
   --col-01:#222323;
+
+  /* General text colour */
   --col-02:#f0f6f0;
 
   /* Filter buttons */
@@ -37,6 +40,10 @@ body{
   padding: 2vw;
 }
 
+body > div {
+  padding: 2vh;
+}
+
 a {
   color: var(--col-06);
 }
@@ -51,6 +58,7 @@ a {
   border: var(--border);
   padding: 2vw;
   /* align-items: center; */
+  text-align: left;
 }
 
 .FilterSection{
@@ -73,6 +81,7 @@ a {
 }
 
 .RecipeLink{
+  text-align: center;
   color: var(--col-07);
 }
 
@@ -81,27 +90,63 @@ a {
 }
 
 .RecipeName{
+  text-align: center;
   font-size: 1.5em;
+  overflow: visible;
   color: rgb(237, 195, 141);
 }
 
+.RecipeName > a {
+  color: var(--col-05);
+}
+
+
 .Author{
+  text-align: center;
   color: rgb(143, 108, 56);
   font-weight: 200;
 }
 
 .RecipeImageContainer{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2;
+  justify-content: center;
   padding: 20px;
   align-content: center;
+  
 }
 
 .RecipeImg{
-  width: 500px;
-  /* padding: 20px; */
-
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  height: auto;
 }
 
+/* 
+Wanted to find a way to resize images
+IF it's wide, then restrict the width
+IF it's tall, then restrict the height
+OR both~
+??but how to keep the aspect ratio?? 
+*/
+/* .RecipeImgWide{
+  width: 450px;
+  height: auto;
+} */
+/* .RecipeImgTall {
+  width: auto;
+  height: 450px;
+} */
+
 .Attribution{
+  /* justify-self: center; */
+  /* align-content: center; */
+  text-align: center;
+  width: 450px;
+  height: auto;
+  
   font-size: 0.8em;
   font-style: italic;
   color: var(--col08);
@@ -112,38 +157,41 @@ a {
 } */
 
 .Cuisine{
-
+  text-align: center;
 }
 
 .TimeToCook{
-
+  text-align: center;
 }
 
 .SkillLevel{
-
+  text-align: center;
 }
 
 .Course{
-
+  text-align: center;
 }
 
 .Servings{
-
+  text-align: center;
 }
 
 .Dietary{
-
+  text-align: center;
 }
 
 .DatePublished{
+  text-align: center;
   color: var(--col-07);
 }
 
 .DateUpdated{
-
+  text-align: center;
+  color: var(--col-07);
 }
 
 .SpecialEquipment{
+  text-align: center;
   color: var(--col-07);
 }
 

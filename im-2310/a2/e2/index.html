@@ -21,13 +21,13 @@
 
     <hr /> 
 
-    <div class="FilterSection">     
+    <div class="FilterSection"> 
+      <!-- Calls the over-arching class, which finds + display ALL recipes -->    
       <button class="FilterButton" onclick='filterCategory("RecipeBox", this)'>ALL</button> 
 
       <!-- Filter 1: By Author -->
       <details class="FilterBox">
         <summary>Author</summary>
-        <!-- Calling the over-arching class to display ALL recipes by all authors -->
         <button class="FilterButton" onclick='filterCategory("KLA", this)'>J. Kenji López-Alt</button>
         <button class="FilterButton" onclick='filterCategory("M", this)'>Maangchi</button>
         <button class="FilterButton" onclick='filterCategory("HM", this)'>Hetty McKinnon</button>
@@ -86,7 +86,7 @@
 
       <!-- don't forget to change out <div>s for the most appropriate element -->
       <!-- i'll give you one for free - you should change the URL into an <a> tag, don't forget to add the appropriate attributes so it works as a link -->
-      <div class="RecipeLink">URL: <a href=https://www.abc.net.au/everyday/baked-puttanesca-risotto-with-tomato-olives-lemon-parsley-recipe/11270338>via ABC</a></div>
+      <div class="RecipeLink"><a href=https://www.abc.net.au/everyday/baked-puttanesca-risotto-with-tomato-olives-lemon-parsley-recipe/11270338>ABC.net.au</a></div>
       
       <div class="RecipeName">Baked Puttanesca Risotto with Olives, Lemon and Parsley</div>
 
@@ -135,8 +135,7 @@
     <!-- Recipe 2 -->
     <div class="RecipeBox HM Italian Vegetarian Low No">
 
-      <div class="RecipeLink">URL: <a href=https://www.abc.net.au/everyday/caprese-salad-slow-roasted-tomato-rocket-basil-gremolata-recipe/10776846>via ABC</a></div>
-
+      <div class="RecipeLink"><a href=https://www.abc.net.au/everyday/caprese-salad-slow-roasted-tomato-rocket-basil-gremolata-recipe/10776846>ABC.net.au</a></div>
       <div class="RecipeName">Caprese Salad with Slow-Roasted Tomatoes, Rocket and Basil Gremolata</div>
 
       <div class="Author"> Hetty Mckinnon</div>
@@ -183,7 +182,7 @@
     <!-- Recipe 3 -->
     <div class="RecipeBox KLA Fusion Vegetarian Medium No">
 
-      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe>via Serious Eats</a></div>
+      <div class="RecipeLink"><a href=https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe>SeriousEats.com</a></div>
 
       <div class="RecipeName">Crispy Enoki and Onion Fritters with Thai Curry Mayo Recipe</div>
 
@@ -231,7 +230,7 @@
     <!-- Recipe 4 -->
     <div class="RecipeBox M Korean Vegetarian Medium Yes">
 
-      <div class="RecipeLink">URL: <a href=https://www.maangchi.com/recipe/jjinppang>via Maangchi</a></div>
+      <div class="RecipeLink"><a href=https://www.maangchi.com/recipe/jjinppang>Maangchi.com</a></div>
 
       <div class="RecipeName">Fluffy Steamed Buns filled with Sweet Red Beans</div>
 
@@ -278,7 +277,7 @@
     <!-- Recipe 5 -->
     <div class="RecipeBox KLA Western Vegetarian Low No">
 
-      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe>via Serious Eats</a></div>
+      <div class="RecipeLink"><a href=https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe>SeriousEats.com</a></div>
 
       <div class="RecipeName">The Food Lab's Chocolate Chip Cookies</div>
 
@@ -324,7 +323,7 @@
     <!-- Recipe 6 -->
     <div class="RecipeBox KLA Fusion Vegetarian Low No">
 
-      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe>via Serious Eats</a></div>
+      <div class="RecipeLink"><a href=https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe>SeriousEats.com</a></div>
 
       <div class="RecipeName">Grilled Cheese With Kimchi Recipe</div>
 
@@ -372,7 +371,7 @@
     <!-- Recipe 7 -->
     <div class="RecipeBox CLM American Meat-based Medium No">
 
-      <div class="RecipeLink">URL: <a href=https://www.patreon.com/posts/recipe-hands-off-60369279>via Patreon</a></div>
+      <div class="RecipeLink"><a href=https://www.patreon.com/posts/recipe-hands-off-60369279>Patreon.com</a></div>
 
       <div class="RecipeName">Hands-Off Pork and Beans</div>
 
@@ -419,7 +418,7 @@
     <!-- Recipe 8 -->
     <div class="RecipeBox M Korean Vegetarian Low No">
 
-      <div class="RecipeLink">URL: <a href=https://www.maangchi.com/recipe/kimchijeon>via Maangchi</a></div>
+      <div class="RecipeLink"><a href=https://www.maangchi.com/recipe/kimchijeon>Maangchi.com</a></div>
 
       <div class="RecipeName">Kimchi Pancake</div>
 
@@ -465,7 +464,7 @@
     <!-- Recipe 9 -->
     <div class="RecipeBox KLA North-African Vegetarian Medium No">
 
-      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe>via Serious Eats</a></div>
+      <div class="RecipeLink"><a href=https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe>SeriousEats.com</a></div>
 
       <div class="RecipeName">Shakshuka (North African–Style Poached Eggs in Spicy Tomato Sauce)</div>
 
@@ -511,7 +510,7 @@
     <!-- Recipe 10 -->
     <div class="RecipeBox CLM Italian Pescatarian Low No">
 
-      <div class="RecipeLink">URL: <a href=https://www.patreon.com/posts/pasta-with-sauce-45042575>via Serious Eats</a></div>
+      <div class="RecipeLink"><a href=https://www.patreon.com/posts/pasta-with-sauce-45042575>SeriousEats.com</a></div>
 
       <div class="RecipeName">Spaghetti with Melted Cauliflower Sauce</div>
 
@@ -557,7 +556,7 @@
     <!-- Recipe 11 -->
     <div class="RecipeBox M Korean Meat-based Medium No">
 
-      <div class="RecipeLink">URL: <a href=https://www.maangchi.com/recipe/yangnyeom-tongdak>via Maangchi</a></div>
+      <div class="RecipeLink"><a href=https://www.maangchi.com/recipe/yangnyeom-tongdak>Maangchi.com</a></div>
 
       <div class="RecipeName">Sweet, Sour, & Spicy Korean Fried Chicken</div>
 
@@ -605,7 +604,7 @@
     <!-- Recipe 12 -->
     <div class="RecipeBox KLA Russian Meat-based Medium ">
 
-      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/ultimate-beef-stroganof-recipe>via Serious Eats</a></div>
+      <div class="RecipeLink"><a href=https://www.seriouseats.com/ultimate-beef-stroganof-recipe>SeriousEats.com</a></div>
 
       <div class="RecipeName">The Ultimate Beef Stroganoff Recipe</div>
 
@@ -653,7 +652,7 @@
     <!-- Recipe 13 -->
     <div class="RecipeBox CLM French Vegetarian Medium Yes">
 
-      <div class="RecipeLink">URL: <a href=https://www.patreon.com/posts/recipe-vanilla-60100711>via Patreon</a></div>
+      <div class="RecipeLink"><a href=https://www.patreon.com/posts/recipe-vanilla-60100711>Patreon.com</a></div>
 
       <div class="RecipeName">Vanilla-Brown Butter Pear Tart</div>
 
@@ -701,7 +700,7 @@
     <!-- Recipe 14 -->
     <div class="RecipeBox HM Fusion Vegetarian Main No">
     
-      <div class="RecipeLink">URL: <a href=https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392>via ABC</a></div>
+      <div class="RecipeLink"><a href=https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392>ABC.net.au</a></div>
 
       <div class="RecipeName">Vegetarian Carbonara with Mushrooms, Miso and Parmesan</div>
 
