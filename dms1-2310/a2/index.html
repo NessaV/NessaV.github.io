@@ -4,8 +4,6 @@
     <!-- Important information about the website goes here -->
     <title>A2 for Digital Media Studio 1</title> <!-- appears as the window tab title -->
 
-
-
     <style>
         .row{
             width: 720px;
@@ -17,84 +15,48 @@
             vertical-align: middle;
             padding: 20px;
         }
+        
 
     </style>
 
-    <!-- <style>
-        /* Icon Template -Percentage-  */
-        
-        .sections {
-            padding: 10px;
-            border: 10px;
-            border-style: groove;
-            /* border-color: sandy; */
-            background-color: #f0ede3;
-        }
-
-        .row {
-            margin-top: 30px;
-        }
-
-        .left-column {
-            float: left;
-            width: 30%;
-            margin-left: 30px;
-        }
-
-        .centre-column {
-            width: 30%;
-            margin: auto;
-        }
-
-        .right-column {
-            float: right;
-            width: 30%;
-            margin: auto;
-        }
-
-        .image-container {
-            display: table-cell;
-            vertical-align: middle;
-            margin: auto;
-        }
-    </style> -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
 </head>
 
-<body>
-    <script>
-        var sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9;
-        sound1 = sound2 = sound3 = sound4 = sound5 = sound6 = sound7 = sound8 = sound9 = new buzz.sound("./sound/WingsFlapping_20230404.aac");
 
-        // var sound1 = new buzz.sound("./sound/WingsFlapping_20230404.aac");
+<body style="background-color:rgb(172, 172, 172);">
+    
+    <script>
+        /* Following sounds sourced from Freesound */
+        var sound1 = new buzz.sound("./sound/arrow-string-drawn-shot_511489__lydmakeren__fx_bowarrow2.wav");
+        var sound2 = new buzz.sound("./sound/kitsune-koto-softer_175672__mondschein90__koto-hit.wav");
+        var sound3 = new buzz.sound("./sound/wand-tinkle-2x-v2__221683__timbre__another-magic-wand-spell-tinkle.wav");
+        var sound4 = new buzz.sound("./sound/war-horn-spartan_539956__adharca__war-horn.wav");
+        var sound5 = new buzz.sound("./sound/fire-blaze-v2_442677__qubodup__tree-burns-down.wav");
+        var sound6 = new buzz.sound("./sound/wings-heavy-v2_572216__shatterstars__giant-wings-flapping.wav");
+        // var sound7 = new buzz.sound("./sound/potion-brew-bubbles-v1_540074__magnuswaker__potion-bubbles.wav");
+        var sound7 = new buzz.sound("./sound/potion-brew-bubbles-v2_540074__magnuswaker__potion-bubbles.wav");
+        var sound8 = new buzz.sound("./sound/egypt-theme_648688__thelastoneonearth__the-long-egyptian-walk.wav");
+        var sound9 = new buzz.sound("./sound/shrine_festival_bg-v2_76586__volivieri__shimbashi_festival_taiko.wav");
+
+
+        /* Was hoping to be able to make all the sounds play the one audio file, but I can't get it to work */
+        // var sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9;
+        // this.sound1 = new buzz.sound("./sound/WingsFlapping_20230404.aac");
+        // sound2 = sound1;
+        // // var sound1 = new buzz.sound("./sound/WingsFlapping_20230404.aac");
 
         window.onload = function () {
             document.getElementById('icon1').addEventListener('click', function () { sound1.play(); });
-        }
-        window.onload = function () {
             document.getElementById('icon2').addEventListener('click', function () { sound2.play(); });
-        }
-        window.onload = function () {
             document.getElementById('icon3').addEventListener('click', function () { sound3.play(); });
-        }
-        window.onload = function () {
             document.getElementById('icon4').addEventListener('click', function () { sound4.play(); });
-        }
-        window.onload = function () {
             document.getElementById('icon5').addEventListener('click', function () { sound5.play(); });
-        }
-        window.onload = function () {
             document.getElementById('icon6').addEventListener('click', function () { sound6.play(); });
-        }
-        window.onload = function () {
             document.getElementById('icon7').addEventListener('click', function () { sound7.play(); });
-        }
-        window.onload = function () {
             document.getElementById('icon8').addEventListener('click', function () { sound8.play(); });
-        }
-        window.onload = function () {
             document.getElementById('icon9').addEventListener('click', function () { sound9.play(); });
         }
+        
     </script>
 
     <!-- Row #1 -->
@@ -103,14 +65,6 @@
             <img id="icon1" img src="img/bowarrowA@4x.png" 
             onmouseover="this.src='img/bowarrowB@4x.png';"
             onmouseout="this.src='img/bowarrowA@4x.png';"
-            onclick="sound1.play();"
-            height="200" width="200">
-        </div>
-        <div class="image-container">
-            <img id="icon3" img src="img/gemstonesA@4x.png" 
-            onmouseover="this.src='img/gemstonesB@4x.png';"
-            onmouseout="this.src='img/gemstonesA@4x.png';"
-            onclick="sound3.play();"
             height="200" width="200">
         </div>
         <div class="image-container">
@@ -120,6 +74,14 @@
             onclick="sound2.play();"
             height="200" width="200">
         </div>
+        <div class="image-container">
+            <img id="icon3" img src="img/gemstonesA@4x.png" 
+            onmouseover="this.src='img/gemstonesB@4x.png';"
+            onmouseout="this.src='img/gemstonesA@4x.png';"
+            onclick="sound3.play();"
+            height="200" width="200">
+        </div>
+        
     </div>
 
     <!--  Row #2 -->
@@ -132,17 +94,17 @@
             height="200" width="200">
         </div>
         <div class="image-container">
-            <img id="icon6" img src="img/pegasusA@4x.png" 
-            onmouseover="this.src='img/pegasusB@4x.png';"
-            onmouseout="this.src='img/pegasusA@4x.png';"
-            onclick="sound6.play();"
-            height="200" width="200">
-        </div>
-        <div class="image-container">
             <img id="icon5" img src="img/campfireA_1@4x.png" 
             onmouseover="this.src='img/campfireB@4x.png';"
             onmouseout="this.src='img/campfireA_1@4x.png';"
             onclick="sound5.play();"
+            height="200" width="200">
+        </div>
+        <div class="image-container">
+            <img id="icon6" img src="img/pegasusA@4x.png" 
+            onmouseover="this.src='img/pegasusB@4x.png';"
+            onmouseout="this.src='img/pegasusA@4x.png';"
+            onclick="sound6.play();"
             height="200" width="200">
         </div>
     </div>
@@ -157,17 +119,17 @@
             height="200" width="200">
         </div>
         <div class="image-container">
-            <img id="icon9" img src="img/goheiA@4x.png" 
-            onmouseover="this.src='img/goheiB@4x.png';"
-            onmouseout="this.src='img/goheiA@4x.png';"
-            onclick="sound9.play();"
-            height="200" width="200">
-        </div>
-        <div class="image-container">
             <img id="icon8" img src="img/anubisA@4x.png" 
             onmouseover="this.src='img/anubisB@4x.png';"
             onmouseout="this.src='img/anubisA@4x.png';"
             onclick="sound8.play();"
+            height="200" width="200">
+        </div>
+        <div class="image-container">
+            <img id="icon9" img src="img/goheiA@4x.png" 
+            onmouseover="this.src='img/goheiB@4x.png';"
+            onmouseout="this.src='img/goheiA@4x.png';"
+            onclick="sound9.play();"
             height="200" width="200">
         </div>
 
