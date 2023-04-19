@@ -52,6 +52,11 @@ a {
   i've set up a basic flexbox for each recipe container - you might want to change some of the 
   flex properties here on the container or on the individual flex items depending on how you want to style them
 */
+.CentreTitle{
+  display: flex;
+  justify-content: center;
+}
+
 .RecipeBox{
   display: flex;
   flex-direction: column;

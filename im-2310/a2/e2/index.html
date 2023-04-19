@@ -17,13 +17,13 @@
 
   <body>
 
-    <div>Interactive Media 1 Recipe List</div>
+    <div class="CentreTitle">Interactive Media 1 Recipe List <br>s3781499 ---- 20th March 2023</div>
 
-    <hr /> 
+    <hr/> 
 
     <div class="FilterSection"> 
       <!-- Calls the over-arching class, which finds + display ALL recipes -->    
-      <button class="FilterButton" onclick='filterCategory("RecipeBox", this)'>ALL</button> 
+      <button class="FilterButton" onclick='filterCategory("RecipeBox", this)'>Show All Recipes</button> 
 
       <!-- Filter 1: By Author -->
       <details class="FilterBox">
@@ -32,16 +32,10 @@
         <button class="FilterButton" onclick='filterCategory("M", this)'>Maangchi</button>
         <button class="FilterButton" onclick='filterCategory("HM", this)'>Hetty McKinnon</button>
         <button class="FilterButton" onclick='filterCategory("CLM", this)'>Carla Lalli Music</button>
-        
       </details>
 
-      <!-- Filter 2: Test -->
-      <details class="FilterBox">
-        <summary>Test</summary>
-        <button class="FilterButton" onclick='filterCategory("Test", this)'>Hide Recipes</button>
-      </details>
 
-      <!-- Filter 3: By Cuisine -->
+      <!-- Filter 2: By Cuisine -->
       <details class="FilterBox">
 
         <summary>Cuisine</summary>
@@ -52,7 +46,7 @@
         <button class="FilterButton" onclick='filterCategory("Korean", this)'>Korean</button>
       </details>
 
-      <!-- Filter 4: Dietary Info -->
+      <!-- Filter 3: Dietary Info -->
       <details>
         <summary>Dietary</summary>
         <button class="FilterButton" onclick='filterCategory("Meat-based", this)'>Meat based</button>
@@ -60,22 +54,22 @@
         <button class="FilterButton" onclick='filterCategory("Pescatarian", this)'>Pescatarian</button>
       </details>
 
-      <!-- Filter 5: Skill Level / Difficulty -->
+      <!-- Filter 4: Skill Level / Difficulty -->
       <details>
         <summary>Skill Level</summary>
         <button class="FilterButton" onclick='filterCategory("Low", this)'>Low</button>
         <button class="FilterButton" onclick='filterCategory("Medium", this)'>Medium</button>
-        <!-- <button class="FilterButton" onclick='filterCategory("RecipeName", this)'>RecipeName</button> -->
+        <button class="FilterButton" onclick='filterCategory("High", this)'>High</button>
       </details>
 
-      <!-- Filter 6: Requires Special Equipment -->
+      <!-- Filter 5: Requires Special Equipment -->
       <details>
         <summary>Requires Special Equipment?</summary>
         <button class="FilterButton" onclick='filterCategory("Yes", this)'>Yes</button>
         <button class="FilterButton" onclick='filterCategory("No", this)'>No</button>
 
       </details>
-
+      <button class="FilterButton" onclick='filterCategory("Test", this)'>Hide Recipes</button>
 
     </div>
 
