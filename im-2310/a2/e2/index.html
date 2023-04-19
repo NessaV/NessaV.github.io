@@ -22,25 +22,71 @@
     <hr /> 
 
     <div class="FilterSection">     
+      <button class="FilterButton" onclick='filterCategory("RecipeBox", this)'>ALL</button> 
 
+      <!-- Filter 1: By Author -->
       <details class="FilterBox">
         <summary>Author</summary>
+        <!-- Calling the over-arching class to display ALL recipes by all authors -->
         <button class="FilterButton" onclick='filterCategory("KLA", this)'>J. Kenji López-Alt</button>
         <button class="FilterButton" onclick='filterCategory("M", this)'>Maangchi</button>
         <button class="FilterButton" onclick='filterCategory("HM", this)'>Hetty McKinnon</button>
         <button class="FilterButton" onclick='filterCategory("CLM", this)'>Carla Lalli Music</button>
+        
       </details>
+
+      <!-- Filter 2: Test -->
+      <details class="FilterBox">
+        <summary>Test</summary>
+        <button class="FilterButton" onclick='filterCategory("Test", this)'>Hide Recipes</button>
+      </details>
+
+      <!-- Filter 3: By Cuisine -->
+      <details class="FilterBox">
+
+        <summary>Cuisine</summary>
+        <button class="FilterButton" onclick='filterCategory("Italian", this)'>Italian</button>
+        <button class="FilterButton" onclick='filterCategory("Vegetarian", this)'>Vegetarian</button>
+        <button class="FilterButton" onclick='filterCategory("North-African", this)'>North African</button>
+        <button class="FilterButton" onclick='filterCategory("American", this)'>American</button>
+        <button class="FilterButton" onclick='filterCategory("Korean", this)'>Korean</button>
+      </details>
+
+      <!-- Filter 4: Dietary Info -->
+      <details>
+        <summary>Dietary</summary>
+        <button class="FilterButton" onclick='filterCategory("Meat-based", this)'>Meat based</button>
+        <button class="FilterButton" onclick='filterCategory("Vegetarian", this)'>Vegetarian</button>
+        <button class="FilterButton" onclick='filterCategory("Pescatarian", this)'>Pescatarian</button>
+      </details>
+
+      <!-- Filter 5: Skill Level / Difficulty -->
+      <details>
+        <summary>Skill Level</summary>
+        <button class="FilterButton" onclick='filterCategory("Low", this)'>Low</button>
+        <button class="FilterButton" onclick='filterCategory("Medium", this)'>Medium</button>
+        <!-- <button class="FilterButton" onclick='filterCategory("RecipeName", this)'>RecipeName</button> -->
+      </details>
+
+      <!-- Filter 6: Requires Special Equipment -->
+      <details>
+        <summary>Requires Special Equipment?</summary>
+        <button class="FilterButton" onclick='filterCategory("Yes", this)'>Yes</button>
+        <button class="FilterButton" onclick='filterCategory("No", this)'>No</button>
+
+      </details>
+
 
     </div>
 
     <hr /> 
 
     <!-- Recipe 1 -->
-    <div class="RecipeBox HM">
+    <div class="RecipeBox HM Italian Vegetarians Low Yes">
 
       <!-- don't forget to change out <div>s for the most appropriate element -->
       <!-- i'll give you one for free - you should change the URL into an <a> tag, don't forget to add the appropriate attributes so it works as a link -->
-      <div class="RecipeLink">URL: https://www.abc.net.au/everyday/baked-puttanesca-risotto-with-tomato-olives-lemon-parsley-recipe/11270338</div>
+      <div class="RecipeLink">URL: <a href=https://www.abc.net.au/everyday/baked-puttanesca-risotto-with-tomato-olives-lemon-parsley-recipe/11270338>via ABC</a></div>
 
       <div class="RecipeName">Recipe Name: Baked Puttanesca Risotto with Olives, Lemon and Parsley</div>
 
@@ -87,9 +133,9 @@
     </div>
     
     <!-- Recipe 2 -->
-    <div class="RecipeBox HM">
+    <div class="RecipeBox HM Italian Vegetarian Low No">
 
-      <div class="RecipeLink">URL: https://www.abc.net.au/everyday/caprese-salad-slow-roasted-tomato-rocket-basil-gremolata-recipe/10776846</div>
+      <div class="RecipeLink">URL: <a href=https://www.abc.net.au/everyday/caprese-salad-slow-roasted-tomato-rocket-basil-gremolata-recipe/10776846>via ABC</a></div>
 
       <div class="RecipeName">Recipe Name: Caprese Salad with Slow-Roasted Tomatoes, Rocket and Basil Gremolata</div>
 
@@ -135,9 +181,9 @@
     </div>
     
     <!-- Recipe 3 -->
-    <div class="RecipeBox KLA">
+    <div class="RecipeBox KLA Fusion Vegetarian Medium No">
 
-      <div class="RecipeLink">URL: https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe</div>
+      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe>via Serious Eats</a></div>
 
       <div class="RecipeName">Recipe Name: Crispy Enoki and Onion Fritters with Thai Curry Mayo Recipe</div>
 
@@ -183,9 +229,9 @@
     </div>
     
     <!-- Recipe 4 -->
-    <div class="RecipeBox M">
+    <div class="RecipeBox M Korean Vegetarian Medium Yes">
 
-      <div class="RecipeLink">URL: https://www.maangchi.com/recipe/jjinppang</div>
+      <div class="RecipeLink">URL: <a href=https://www.maangchi.com/recipe/jjinppang>via Maangchi</a></div>
 
       <div class="RecipeName">Recipe Name: Fluffy Steamed Buns filled with Sweet Red Beans</div>
 
@@ -225,14 +271,14 @@
 
       <div class="DateUpdated">Date Updated: August 11, 2021</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: Steamer</div>
 
     </div>
     
     <!-- Recipe 5 -->
-    <div class="RecipeBox KLA">
+    <div class="RecipeBox KLA Western Vegetarian Low No">
 
-      <div class="RecipeLink">URL: https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe</div>
+      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe>via Serious Eats</a></div>
 
       <div class="RecipeName">Recipe Name: The Food Lab's Chocolate Chip Cookies</div>
 
@@ -276,9 +322,9 @@
     </div>
     
     <!-- Recipe 6 -->
-    <div class="RecipeBox KLA">
+    <div class="RecipeBox KLA Fusion Vegetarian Low No">
 
-      <div class="RecipeLink">URL: https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe</div>
+      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe>via Serious Eats</a></div>
 
       <div class="RecipeName">Recipe Name: Grilled Cheese With Kimchi Recipe</div>
 
@@ -324,9 +370,9 @@
     </div>
     
     <!-- Recipe 7 -->
-    <div class="RecipeBox CLM">
+    <div class="RecipeBox CLM American Meat-based Medium No">
 
-      <div class="RecipeLink">URL: https://www.patreon.com/posts/recipe-hands-off-60369279</div>
+      <div class="RecipeLink">URL: <a href=https://www.patreon.com/posts/recipe-hands-off-60369279>via Patreon</a></div>
 
       <div class="RecipeName">Recipe Name: Hands-Off Pork and Beans</div>
 
@@ -371,9 +417,9 @@
     </div>
     
     <!-- Recipe 8 -->
-    <div class="RecipeBox M">
+    <div class="RecipeBox M Korean Vegetarian Low No">
 
-      <div class="RecipeLink">URL: https://www.maangchi.com/recipe/kimchijeon</div>
+      <div class="RecipeLink">URL: <a href=https://www.maangchi.com/recipe/kimchijeon>via Maangchi</a></div>
 
       <div class="RecipeName">Recipe Name: Kimchi Pancake</div>
 
@@ -417,9 +463,9 @@
     </div>
     
     <!-- Recipe 9 -->
-    <div class="RecipeBox KLA">
+    <div class="RecipeBox KLA North-African Vegetarian Medium No">
 
-      <div class="RecipeLink">URL: https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe</div>
+      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe>via Serious Eats</a></div>
 
       <div class="RecipeName">Recipe Name: Shakshuka (North African–Style Poached Eggs in Spicy Tomato Sauce)</div>
 
@@ -463,9 +509,9 @@
     </div>
     
     <!-- Recipe 10 -->
-    <div class="RecipeBox CLM">
+    <div class="RecipeBox CLM Italian Pescatarian Low No">
 
-      <div class="RecipeLink">URL: https://www.patreon.com/posts/pasta-with-sauce-45042575</div>
+      <div class="RecipeLink">URL: <a href=https://www.patreon.com/posts/pasta-with-sauce-45042575>via Serious Eats</a></div>
 
       <div class="RecipeName">Recipe Name: Spaghetti with Melted Cauliflower Sauce</div>
 
@@ -509,9 +555,9 @@
     </div>
     
     <!-- Recipe 11 -->
-    <div class="RecipeBox M">
+    <div class="RecipeBox M Korean Meat-based Medium No">
 
-      <div class="RecipeLink">URL: https://www.maangchi.com/recipe/yangnyeom-tongdak</div>
+      <div class="RecipeLink">URL: <a href=https://www.maangchi.com/recipe/yangnyeom-tongdak>via Maangchi</a></div>
 
       <div class="RecipeName">Recipe Name: Sweet, Sour, & Spicy Korean Fried Chicken</div>
 
@@ -557,9 +603,9 @@
     </div>
     
     <!-- Recipe 12 -->
-    <div class="RecipeBox KLA">
+    <div class="RecipeBox KLA Russian Meat-based Medium ">
 
-      <div class="RecipeLink">URL: https://www.seriouseats.com/ultimate-beef-stroganof-recipe</div>
+      <div class="RecipeLink">URL: <a href=https://www.seriouseats.com/ultimate-beef-stroganof-recipe>via Serious Eats</a></div>
 
       <div class="RecipeName">Recipe Name: The Ultimate Beef Stroganoff Recipe</div>
 
@@ -605,9 +651,9 @@
     </div>
     
     <!-- Recipe 13 -->
-    <div class="RecipeBox CLM">
+    <div class="RecipeBox CLM French Vegetarian Medium Yes">
 
-      <div class="RecipeLink">URL: https://www.patreon.com/posts/recipe-vanilla-60100711</div>
+      <div class="RecipeLink">URL: <a href=https://www.patreon.com/posts/recipe-vanilla-60100711>via Patreon</a></div>
 
       <div class="RecipeName">Recipe Name: Vanilla-Brown Butter Pear Tart</div>
 
@@ -653,9 +699,9 @@
     </div>
 
     <!-- Recipe 14 -->
-    <div class="RecipeBox HM">
-
-      <div class="RecipeLink">URL: https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392</div>
+    <div class="RecipeBox HM Fusion Vegetarian Main No">
+    
+      <div class="RecipeLink">URL: <a href=https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392>via ABC</a></div>
 
       <div class="RecipeName">Recipe Name: Vegetarian Carbonara with Mushrooms, Miso and Parmesan</div>
 
