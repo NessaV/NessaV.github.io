@@ -22,6 +22,77 @@
     <hr/> 
 
     <div class="FilterSection"> 
+      <!--  I N F O R M A T I O N    D E S I G N    D E C I S I O N S  -->
+      <!--  20 March 2023
+        COLOUR
+
+        I wanted to go for a simple theme. Just by adding a background colour to the page.
+        And then, going for accent colours for the headers.
+        I think that increases the readability of the page by a big margin.
+
+        I resized the recipe name, to turn them into more proper headings.
+
+        I went with electric blue colours for all the hyperlinks on the page.
+        And all the headers with mustard yellow, dark orange hues.
+
+        My feedback from A2 E2, reminded me about Custom CSS variables (or rather, the fact that I hadn't utilised them).
+        I brushed up on Custom CSS variables, and implemented these variables for the colours used in the webpage.
+        Now it will be a lot easier to manage the colour themes of the webpage.
+
+        References:
+        https://www.freecodecamp.org/news/what-are-css-variables-and-how-to-use-them/
+        
+      -->
+      <!-- 
+        ALIGNMENT 
+
+        I played around with this. Initially, I focused on getting the colours and font sizes first.
+        Then, I tried changing the alignment of the text and images. This took me a while to get working. I realised that I should put the recipe image and its image attribution into a container, so that I can align it in the centre of the page.
+        Centre alignment works best for the content, as it will suit best in any device screen sizes, and any wndow sizes.
+
+        The exception is the filter buttons. While the filter box itself, is centre-aligned, the filters themselves are aligned to the left.
+        I figured this would work best. Each category of filters will vary with the number of filter buttons they contain.
+        It also is neater to have these toggle icons all in a straigt alignment with each other. A centre-alignment would stagger them in a confusing manner.
+
+      -->
+      <!-- 
+        CONTENT
+
+        The information which I removed was the Date Published. In a way, it doesn't matter if you don't know when the recipe was published. Wouldn't you rather see how recently the recipe was updated? It could mean, even if it's an old recipe, if it's updated, it could be better than before, adjusted and improved.
+
+        I also removed the Publisher, as usually it's evident from the link domain name of where the recipe is published, or references the author's name. I ended up putting the domain name as part of the RecipeLink.
+
+      -->
+      <!-- 
+        FILTERS
+
+        I included filters outside of the toggle options, for Showing All Recipes, and to Hide Recipes. Easily accessible, as you don't need to search inside the toggles for them. And they help your reset your selected filter results.
+
+
+        Given more time, I would add another filter for Prep and Cook Times for each recipe. While not something that I'd need initially, it is something I consider later, when choosing a recipe to use. 
+        
+        But when I am looking for recipes to try, I look at the recipe name first.
+        I search first for the categories, such as cuisine and course. And then dietary. And then author. And then skill level and cook / prep times.
+
+        I included one for whether a recipe requires special equipment. This is handy, as not everyone is able to have access to every kitchen appliance at all times and situations. Maybe you're at a holiday home, a hotel, or a friend's place, or moved out to a new place, etc.
+
+      -->
+      <!-- 
+        LINKS
+        I integrated the recipe links into the recipe images themselves. That way, there is a convenient way for users to navigate to the recipes they find on this webpage.
+        A common pattern seen in food blog websites, I suppose.
+
+        Initially, I tried to add a property into the <img> tag, that would act "onclick".
+        Not that I fiddled around long enough to get that method working.
+        I found out an easier and simpler solution.
+        Which was to nest the <img> inside the <a href> tage. It was a perfect solution.
+
+        References:
+        https://stackoverflow.com/questions/23331873/html-img-onclick-javascript 
+        https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML
+      -->
+
+
       <!-- Calls the over-arching class, which finds + display ALL recipes -->    
       <button class="FilterButton" onclick='filterCategory("RecipeBox", this)'>Show All Recipes</button> 
 
@@ -120,9 +191,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: 3 Jul 2019</div>
+      <!-- <div class="DatePublished">Date Published: 3 Jul 2019</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: 29 Jul 2019</div> -->
+      <div class="DateUpdated">Date Updated: 29 Jul 2019</div>
 
       <div class="SpecialEquipment">Special Equipment: Ovenproof Dutch oven</div>
 
@@ -169,9 +240,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: 4 Feb 2019</div>
+      <!-- <div class="DatePublished">Date Published: 4 Feb 2019</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: 17 Dec 2020</div> -->
+      <div class="DateUpdated">Date Updated: 17 Dec 2020</div>
 
       <div class="SpecialEquipment">Special Equipment: N/A</div>
 
@@ -219,9 +290,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: Oct. 9, 2012</div>
+      <!-- <div class="DatePublished">Date Published: Oct. 9, 2012</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: Aug. 30, 2018</div> -->
+      <div class="DateUpdated">Date Updated: Aug. 30, 2018</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
@@ -268,9 +339,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: December 19, 2017</div>
+      <!-- <div class="DatePublished">Date Published: December 19, 2017</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: August 11, 2021</div> -->
+      <div class="DateUpdated">Date Updated: August 11, 2021</div>
 
       <div class="SpecialEquipment">Special Equipment: Steamer</div>
 
@@ -316,9 +387,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: Dec. 20, 2013</div>
+      <!-- <div class="DatePublished">Date Published: Dec. 20, 2013</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: Sep. 16, 2022</div> -->
+      <div class="DateUpdated">Date Updated: Sep. 16, 2022</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
@@ -366,9 +437,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: Apr. 28, 2013</div>
+      <!-- <div class="DatePublished">Date Published: Apr. 28, 2013</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: Sep. 21, 2022</div> -->
+      <div class="DateUpdated">Date Updated: Sep. 21, 2022</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
@@ -415,9 +486,9 @@
 
       <div class="Dietary">Dietary: Meat based</div>
 
-      <div class="DatePublished">Date Published: Dec 28, 2021</div>
+      <!-- <div class="DatePublished">Date Published: Dec 28, 2021</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: N/A</div> -->
+      <div class="DateUpdated">Date Updated: N/A</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
@@ -463,9 +534,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: February 27th, 2020</div>
+      <!-- <div class="DatePublished">Date Published: February 27th, 2020</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: August 1, 2021</div> -->
+      <div class="DateUpdated">Date Updated: August 1, 2021</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
@@ -511,9 +582,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: Sep. 28, 2016</div>
+      <!-- <div class="DatePublished">Date Published: Sep. 28, 2016</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: Aug. 10, 2022</div> -->
+      <div class="DateUpdated">Date Updated: Aug. 10, 2022</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
@@ -559,9 +630,9 @@
 
       <div class="Dietary">Dietary: Pescatarian</div>
 
-      <div class="DatePublished">Date Published: Dec 16, 2020</div>
+      <!-- <div class="DatePublished">Date Published: Dec 16, 2020</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: N/A</div> -->
+      <div class="DateUpdated">Date Updated: N/A</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
@@ -609,9 +680,9 @@
 
       <div class="Dietary">Dietary: Meat based</div>
 
-      <div class="DatePublished">Date Published: January 27th, 2011</div>
+      <!-- <div class="DatePublished">Date Published: January 27th, 2011</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: August 3, 2021</div> -->
+      <div class="DateUpdated">Date Updated: August 3, 2021</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
@@ -659,9 +730,9 @@
 
       <div class="Dietary">Dietary: Meat based</div>
 
-      <div class="DatePublished">Date Published: Jan. 9, 2015</div>
+      <!-- <div class="DatePublished">Date Published: Jan. 9, 2015</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: Aug. 27, 2020</div> -->
+      <div class="DateUpdated">Date Updated: Aug. 27, 2020</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
@@ -709,9 +780,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: Dec 20, 2021</div>
+      <!-- <div class="DatePublished">Date Published: Dec 20, 2021</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: N/A</div> -->
+      <div class="DateUpdated">Date Updated: N/A</div>
 
       <div class="SpecialEquipment">Special Equipment: Bench scraper, tart pan</div>
 
@@ -758,9 +829,9 @@
 
       <div class="Dietary">Dietary: Vegetarian</div>
 
-      <div class="DatePublished">Date Published: 9 Jul 2020</div>
+      <!-- <div class="DatePublished">Date Published: 9 Jul 2020</div> -->
 
-      <!-- <div class="DateUpdated">Date Updated: 26 Feb 2021</div> -->
+      <div class="DateUpdated">Date Updated: 26 Feb 2021</div>
 
       <div class="SpecialEquipment">Special Equipment: </div>
 
