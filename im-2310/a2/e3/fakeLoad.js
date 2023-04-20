@@ -1,6 +1,22 @@
+
+/* 
+Testing a throbber
+Doesn't work, because I need to import the code.
+I don't think this is the intended approach for this exercise.
+https://aino.github.io/throbber.js/
+*/
+// var throb = Throbber({
+//   color: 'yellow',
+//   clockwise: true
+// });
+
+// throb.appendTo( document.getElementById( 't1' ) );
+// throb.start();
+
+
 /*
 this is a function that handles the fake load time -
-it takes in a number in ms tha defines how long the fake load will be 
+it takes in a number in ms that defines how long the fake load will be 
 and a url to load, in this case just a reference to the hosono.html file
 */
 function loadPageAfterDelay(loadTime, url){
@@ -22,3 +38,6 @@ function loadPageAfterDelay(loadTime, url){
   }, loadTime);
   
 }
+
+  
+  
