@@ -21,6 +21,11 @@
   scroll-behavior: smooth;
 }
 
+a:active {
+  color: var(--col-03);
+}
+
+
 body{
   padding: 1rem;
   background-color: var(--col-02);
@@ -34,6 +39,7 @@ nav {
 nav li{
   font-size: 1rem;
 }
+
 
 section{
   margin-bottom: 2rem;
@@ -70,6 +76,11 @@ dd{
 
 li ul{
   padding-left: 40px;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .img-wrapper{
