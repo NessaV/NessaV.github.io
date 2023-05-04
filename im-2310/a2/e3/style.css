@@ -102,11 +102,32 @@ li ul{
   column-width: 25rem;
 }
 
+
 #mode-button{
   float: right;
   /* note the use of position: sticky to keep the button on the page even with scrolling */
-  position: sticky;
+  position: sticky; /* noted :) */
   top: 1rem;
+
+  background-color: rgba(86, 86, 86, 0.95);
+  width: 20vh;
+  height: 5vh;
+  border-radius: 5px;
+  font-size: 1rem;
+
+  cursor: pointer;
+
+}
+
+#mode-button:hover{
+  background-color: rgba(110, 110, 110, 0.95);
+}
+
+#mode-button:active{
+  background-color: rgba(40, 40, 40, 0.95);
+  box-shadow: 0 5px rgba(40, 40, 40, 0.95);
+  transform: translateY(2px);
+
 }
 
 /* code for loading page */
