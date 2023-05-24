@@ -6,6 +6,7 @@
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
+    max-width: 80%;
   }
 
 /* Style images */
@@ -20,9 +21,10 @@
 
 /* Clear floats */
 .container::after {
-  content: "";
-  clear: both;
-  display: table;
+    /* keeps additional content in the chat container, to be displayed 'inside' of the box */
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* Style the right image */

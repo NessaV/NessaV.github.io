@@ -22,6 +22,11 @@
     <body>
     <!-- body contains everything shown on the webpage -->
     
+        <!-- 
+            CHAT BOX MESSAGES
+            24/05/23
+            REF: https://www.w3schools.com/howto/howto_css_chat.asp
+         -->
         <div class="container">
             <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
             <p>Hello, this is just an example message. Hello, this is just an example message.</p>
@@ -31,8 +36,31 @@
             <img src="img/yatzstar_profile.png" alt="avatar-image" class="right">
             <p>This is an example message in reply. This is an example message in reply.</p>
             <span class="time-right">23:10</span>
+            <span class="time-right">23:10</span>
+            <span class="time-right">23:10</span>
+            <div class="time-right">23:10</div>
+            <div class="time-right">23:10</div>
+            <div class="time-right">23:10</div>
             <div class="time-right">23:10</div>
         </div>  
+
+
+
+        <!-- Trying a 'typewriting text message' -->
+        <div class="container">
+            <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
+            
+            <button onclick="typeWriter()">Click me</button>
+            <!-- <p id="demo"></p> -->
+        </div>
+
+        <!-- Chat message is clickable! *typewrites the text message* -->
+        <div class="container" onclick="typeWriter()">
+            <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
+            
+            <!-- <button onclick="typeWriter()">Click me</button> -->
+            <p id="demo"></p>
+        </div>
 
     </body>
 
