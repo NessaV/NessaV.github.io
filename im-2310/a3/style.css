@@ -1,41 +1,74 @@
 
-/* Chat containers */
+/* Chat room containers */
+.chatroom-container {
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 80vh;
+  max-height: 80vh;
+}
+
+/* Chat message container */
+.chat-container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 80vh;
+  max-height: 80vh;
+}
+
 .container {
-    border: 2px solid #dedede;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    max-width: 80%;
-  }
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 80vh;
+  max-height: 80vh;
+}
+
+.container-right {
+  display: flex;
+  justify-content: right;
+
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 70vh;
+}
 
 /* Style images */
 .container img {
-    float: left;
-    max-width: 60px;
-    width: 100%;
+  float: left;
+  max-width: 60px;
+  width: 100%;
 
-    margin-right: 20px;
-    border-radius: 50%; /* makes a round circle border */
+  margin-right: 20px;
+  border-radius: 50%; /* makes a round circle border */
 }
 
 /* Clear floats */
 .container::after {
-    /* keeps additional content in the chat container, to be displayed 'inside' of the box */
-    content: "";
-    clear: both;
-    display: table;
+  /* keeps additional content in the chat container, to be displayed 'inside' of the box */
+  /* "Clearfix hack"  https://www.w3schools.com/css/css_align.asp */
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Style the right image */
 .container img.right {
-    float: right;
-    margin-left: 20px;
-    margin-right:0;
-  }
+  border-radius: 5px;
+  justify-content: right;
+  margin-left: 20px;
+  margin-right:0;
+}
 
 /* Style time text */
 .time-right {
-    float: right;
-    color: #aaa;
-  }
+  float: right;
+  color: #aaa;
+}

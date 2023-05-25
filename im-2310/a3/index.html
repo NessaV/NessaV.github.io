@@ -81,6 +81,38 @@
             <p id="demo"></p>
         </div>
 
+        <!-- Make it tyepwrite text from inside this -->
+        <!-- 
+            REF: https://discuss.codecademy.com/t/how-to-store-an-html-elements-value-to-a-js-variable/546517
+            How to send text from HTML file, to a the JS file, essentially.
+         -->
+        <div class="container" onclick="typeWriter()">
+            <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
+           
+            <!-- Thank goodness, for my rookie coding skills :')  i remember how to change a value of a variable -->
+            <script>
+                setTxt('testing testing testing testing testing testing testing');
+                setId("messageA");
+            </script>
+            <p id=messageA></p>
+            <!-- <button onclick="typeWriter()">Click me</button> -->
+            
+        </div>
+
+        <div class="container-right" onclick="typeWriter()">
+            <img src="img/yatzstar_profile.png" alt="avatar-image">
+           
+            <!-- Thank goodness, for my rookie coding skills :')  i remember how to change a value of a variable -->
+            <script>
+                // setTxt('testing testing testing testing testing testing testing');
+                // setId();
+                newTypewriterMessage("messageB", "testing testing testing testing testing testing testing")
+            </script>
+            <p id=messageB></p>
+            <!-- <button onclick="typeWriter()">Click me</button> -->
+            
+        </div>
+
     </body>
 
 </html>
