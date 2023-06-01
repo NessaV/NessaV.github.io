@@ -102,6 +102,7 @@
 
 /* Style time text */
 .time-right {
-  float: right;
+  /* float: right; */
+  justify-content: right;
   color: #aaa;
 }

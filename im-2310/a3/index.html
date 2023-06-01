@@ -49,7 +49,7 @@
 
 
         <div class="chatroom-container">
-            <div class="chat-message" id="message-1" 
+            <div class="chat-message" id="message-1"  
             onclick='newTypewriterMessage("message-a", " 1111 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ");'>
                 <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
                 
@@ -65,7 +65,7 @@
 
                     
                 </script> -->
-
+                
                 <p id=message-a></p>
 
             </div>
@@ -79,22 +79,19 @@
                 <img src="img/yatzstar_profile.png" alt="avatar-image">
                 
 
-                <script>
-                    
-                </script>
                 
             </div>
 
-            <div class="chat-message" id="message-3"  onclick='newTypewriterMessage("message-c", " 3333 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ");'>
+            <div class="chat-message" id="message-3">
                 <img src="img/yatzstar_profile.png" alt="avatar-image">
-                
-                <button onclick='newTypewriterMessage("message-c", " 3333 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ");'></button>
+                <div class="time-right">23:10</div>
+                <button onclick='newTypewriterMessage("message-c", " 3333 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ");'>message-c</button>
                 
                 <p id=message-c></p>
-
-                <script>
-                    
-                </script>
+                
+                <!-- Testing with current message id? -->
+                <button onclick='setDivDisplay("message-3");'>hide message</button>
+                
                 
             </div>
         </div>
