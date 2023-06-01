@@ -7,6 +7,7 @@ var i = 0;
 var txt;
 var id;
 var divId;
+var div; /* temp storage, for grabbing element by ID */
 
 function setTxt(htmlTxt) {
   txt = htmlTxt;
@@ -22,6 +23,7 @@ function getId() {
 
 // Show chat message
 /* REF 1/6/23
+    https://developer.mozilla.org/en-US/docs/Web/CSS/display
     https://stackoverflow.com/questions/4528085/toggle-show-hide-div-with-button
 */
 function setDivDisplay(htmlDivId) {
@@ -29,22 +31,53 @@ function setDivDisplay(htmlDivId) {
   // (document.getElementById(divId)).style.display = 'none';
 
   /* IF display is set to 'none', THEN change display to 'block' */
-  var div = document.getElementById(divId);
-  if (div.style.display == "none") {
-    div.style.display == "flex";
-  } 
-  else {
-    div.style.display == "none";
-  }
+  div = document.getElementById(divId);
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'flex';
+    }
 
-  // var div = document.getElementById(divId);
-  //   if (div.style.display !== 'none') {
-  //       div.style.display = 'none';
-  //   }
-  //   else {
-  //       div.style.display = 'block';
-  //   }
+}
 
+
+/* 
+  Hiding a chat message that is shown on screen
+  
+  IF div isn't already set to 'none'  
+    i.e. if it isn't hidden already / if it is something like 'flex'or 'block'
+    THEN set it to 'none'  i.e. hide the message
+  ELSE for all other cases, just set it to 'flex'  
+    i.e. leave it as is, set it to the preferred style of 'flex'
+*/
+function hideChatMessage(htmlDivId) {
+  divId = htmlDivId;
+  div = document.getElementById(divId);
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'flex';
+    }
+}
+
+/* 
+  Showing a chat message that is hidden from view
+
+  IF div isn't already set to 'flex',
+    THEN set it to 'flex'  i.e. show the message
+  ELSE for all other cases, just set it to 'none'
+*/
+function showChatMessage(htmlDivId) {
+  divId = htmlDivId;
+  div = document.getElementById(divId);
+    if (div.style.display !== 'flex') {
+        div.style.display = 'flex';
+    }
+    else {
+        div.style.display = 'none';
+    }
 }
 
 function newTypewriterMessage(htmlId, htmlTxt) {
