@@ -2,20 +2,12 @@
 <html lang="en">
 
     <head>
-    <!-- part of the code, contains metadata of webpage
-    head can link your css and js -->
-        
+
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--set and forget, don't worry too much about this
-            charset  'decode the website using utf-8'
-            utf-8  like a language? database of how letters, numbers, symbols are denoted-->
 
         <link rel="stylesheet" href="style.css">
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <!-- href  location of your file, can be images -->
-    
+
         <script src="script.js"></script>
-        <!-- script  usually just for javascript files -->
 
     </head>
 
@@ -27,7 +19,7 @@
             24/05/23
             REF: https://www.w3schools.com/howto/howto_css_chat.asp
          -->
-        <div class="container">
+        <!-- <div class="container">
             <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
             <p>Hello, this is just an example message. Hello, this is just an example message.</p>
         </div>
@@ -42,25 +34,8 @@
             <div class="time-right">23:10</div>
             <div class="time-right">23:10</div>
             <div class="time-right">23:10</div>
-        </div>  
+        </div>   -->
 
-
-
-        <!-- Trying a 'typewriting text message' -->
-        <div class="container">
-            <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
-            
-            <button onclick="typeWriter()">Click me</button>
-            <!-- <p id="demo"></p> -->
-        </div>
-
-        <!-- Chat message is clickable! *typewrites the text message* -->
-        <div class="container" onclick="typeWriter()">
-            <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
-            
-            <!-- <button onclick="typeWriter()">Click me</button> -->
-            <!-- <p id="demo"></p> -->
-        </div>
 
         <!-- Pin to the bottom? -->
 
@@ -69,48 +44,59 @@
             REF: https://discuss.codecademy.com/t/how-to-store-an-html-elements-value-to-a-js-variable/546517
             How to send text from HTML file, to a the JS file, essentially.
          -->
-        <div class="container" onclick="typeWriter()">
-            <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
-           
-            <!-- Thank goodness, for my rookie coding skills :')  i remember how to change a value of a variable -->
-            <script>
-                setTxt('testing testing testing testing testing testing testing');
-            </script>
-            
-            <button onclick="typeWriter()">Click me</button>
-            <p id="demo"></p>
-        </div>
 
-        <!-- Make it tyepwrite text from inside this -->
-        <!-- 
-            REF: https://discuss.codecademy.com/t/how-to-store-an-html-elements-value-to-a-js-variable/546517
-            How to send text from HTML file, to a the JS file, essentially.
-         -->
-        <div class="container" onclick="typeWriter()">
-            <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
-           
-            <!-- Thank goodness, for my rookie coding skills :')  i remember how to change a value of a variable -->
-            <script>
-                setTxt('testing testing testing testing testing testing testing');
-                setId("messageA");
-            </script>
-            <p id=messageA></p>
-            <!-- <button onclick="typeWriter()">Click me</button> -->
-            
-        </div>
+        
 
-        <div class="container-right" onclick="typeWriter()">
-            <img src="img/yatzstar_profile.png" alt="avatar-image">
-           
-            <!-- Thank goodness, for my rookie coding skills :')  i remember how to change a value of a variable -->
-            <script>
-                // setTxt('testing testing testing testing testing testing testing');
-                // setId();
-                newTypewriterMessage("messageB", "testing testing testing testing testing testing testing")
-            </script>
-            <p id=messageB></p>
-            <!-- <button onclick="typeWriter()">Click me</button> -->
-            
+
+        <div class="chatroom-container">
+            <div class="chat-message" id="message-1" 
+            onclick='newTypewriterMessage("message-a", " 1111 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ");'>
+                <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
+                
+                <!-- <p>1111 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing</p> -->
+
+                <!-- <script >
+                    console.log(id);
+                    const element = document.getElementById("message-1");
+                    element.addEventListener("hover", 
+                        newTypewriterMessage("message-a", "message-a testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing"))
+                
+                    console.log(id);
+
+                    
+                </script> -->
+
+                <p id=message-a></p>
+
+            </div>
+        
+
+
+            <div class="chat-message-right" id="message-2"  onclick='newTypewriterMessage("message-b", " 2222 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ");'>
+                <p id=message-b></p>
+                <button onclick='newTypewriterMessage("message-b", " 2222 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ");'></button>
+                
+                <img src="img/yatzstar_profile.png" alt="avatar-image">
+                
+
+                <script>
+                    
+                </script>
+                
+            </div>
+
+            <div class="chat-message" id="message-3"  onclick='newTypewriterMessage("message-c", " 3333 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ");'>
+                <img src="img/yatzstar_profile.png" alt="avatar-image">
+                
+                <button onclick='newTypewriterMessage("message-c", " 3333 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ");'></button>
+                
+                <p id=message-c></p>
+
+                <script>
+                    
+                </script>
+                
+            </div>
         </div>
 
     </body>
