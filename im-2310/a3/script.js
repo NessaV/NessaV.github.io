@@ -5,7 +5,7 @@ var id;
 var divId;
 var div; /* temp storage, for grabbing element by ID */
 
-var typeSpeed = 10; /* The speed/duration of the effect in milliseconds */
+var typeSpeed = 15; /* The speed/duration of the effect in milliseconds */
 var currentMessageId;
 var nextMessageId;
 

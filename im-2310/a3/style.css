@@ -3,13 +3,16 @@
   REF: https://www.digitalocean.com/community/tutorials/css-hex-code-colors-alpha-values
  */
 :root {
-  --sender-border-colour: #acf7f6;
-  --sender-bg-colour: #65C6C4;
-  --recipient-border-colour: #cfcfcf;
-  --recipient-bg-colour: #c0c0c0;
+  --sender-border-colour: #03a3a0;
+  --sender-bg-colour: #03a3a0;
+  --recipient-border-colour: #4c4c4c;
+  --recipient-bg-colour: #4c4c4c;
   --accent-colour: #FFD166;
-  --background-colour: #F4F4F4;
-  --text-colour: #333333;
+  --outer-background-colour: #F4F4F4;
+  --inner-background-colour: #1a1a1a;
+  --inner-border-colour: #b2b2b2;
+  --body-background-colour: #F4F4F4;
+  --text-colour: #ffffff;
   --heading-colour: #222222;
   --border-colour: #CCCCCC;
 }
@@ -19,8 +22,8 @@ html {
 }
 
 
-
 .outer-window {
+  background-color: var(--outer-background-colour);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,9 +32,11 @@ html {
 }
 
 .inner-window {
+  /* background-image: url("img/background.jpg"); */
+  background-color: var(--inner-background-colour);
   width: 400px;
-  background-color: #f4f4f4;
   padding: 20px;
+  border-color: var(--inner-border-colour);
   border-radius: 10px;
   margin-bottom: 20px;
   /* Create spacing between chatroom and body text */
@@ -51,13 +56,14 @@ html {
 }
 
 .chat-message {
+  color: var(--text-colour);
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px;
 }
 
 .chat-message img {
-  border: 2px solid;
+  border: 1.5px solid;
   border-color: #f4f4f4;
   border-radius: 50%;
   width: 40px;
@@ -65,7 +71,9 @@ html {
   margin-right: 10px;
 }
 
+/* Recipient chat bubble */
 .chat-message p {
+  cursor: pointer;
   border: 2px solid var(--recipient-border-colour);
   background-color: var(--recipient-bg-colour);
   border-radius: 5px;
@@ -75,6 +83,7 @@ html {
 }
 
 .chat-message-right {
+  color: var(--text-colour);
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -82,6 +91,8 @@ html {
 }
 
 .chat-message-right img {
+  border: 1.5px solid;
+  border-color: #f4f4f4;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -89,7 +100,9 @@ html {
   margin-right: 0;
 }
 
+/* Sender chat bubble */
 .chat-message-right p {
+  cursor: pointer;
   border: 2px solid var(--sender-border-colour);
   background-color: var(--sender-bg-colour);
   border-radius: 5px;
