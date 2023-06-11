@@ -29,7 +29,6 @@
   
   border-radius: 50%;
   width: 8vh;
-  height: 8vh;
 
   margin-right: 10px;
 
@@ -106,8 +105,4 @@
   /* float: right; */
   justify-content: right;
   color: #aaa;
-}
-
-.hidden {
-  display: none;
 }
