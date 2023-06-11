@@ -123,7 +123,6 @@ function newTypewriterMessage(htmlId, htmlTxt, currentMessageId, isTyped, clicke
     console.log(typeWriter());
     isTyped = true;
   }
-
   // get ID of next message
   nextMessageId = getNextMessageId(currentMessageId);
   console.log(clickedButton);
@@ -139,7 +138,7 @@ function newTypewriterMessage(htmlId, htmlTxt, currentMessageId, isTyped, clicke
   if (isTyped == true) {
     console.log('is Typed is true');
 
-    // hides current message
+    // If you wanted to show only the current message, uncomment the next line
     // hideChatMessage(currentMessageId);
     console.log('hide current Message');
 
@@ -149,7 +148,6 @@ function newTypewriterMessage(htmlId, htmlTxt, currentMessageId, isTyped, clicke
 
   } else if (isTyped == false) {
     console.log('is Typed is false');
-    
   }
 }
 
