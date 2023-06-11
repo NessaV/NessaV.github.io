@@ -50,51 +50,27 @@
 
         <div class="chatroom-container">
             <div class="chat-message" id="message-1"  
-            onclick='newTypewriterMessage("message-a", " 1111 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing", this);'>
+            onclick='newTypewriterMessage("message-a", " 1111 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing", this.id, false, this);'>
                 <img src="img/eiko_paripikoumei_profile.jpg" alt="avatar-image">
-                
-                <!-- <p>1111 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing</p> -->
-
-                <!-- <script >
-                    console.log(id);
-                    const element = document.getElementById("message-1");
-                    element.addEventListener("hover", 
-                        newTypewriterMessage("message-a", "message-a testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing"))
-                
-                    console.log(id);
-
-                    
-                </script> -->
-                
                 <p id=message-a></p>
-
             </div>
         
-
-
-            <div class="chat-message-right" id="message-2"  onclick='newTypewriterMessage("message-b", " 2222 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ", this);'>
+            <div class="chat-message-right hidden" id="message-2"  onclick='newTypewriterMessage("message-b", " 2222 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ", this.id, false, this);'>
                 <p id=message-b></p>
                 <button onclick='newTypewriterMessage("message-b", " 2222 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ", this);'></button>
-                
                 <img src="img/yatzstar_profile.png" alt="avatar-image">
-                
-
-                
             </div>
 
-            <div class="chat-message" id="message-3">
+            <div class="chat-message hidden" id="message-3"
+            onclick='newTypewriterMessage("message-c", " 3333 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ", this.id, false, this);'>
                 <img src="img/yatzstar_profile.png" alt="avatar-image">
                 <div class="time-right">23:10</div>
-                <button onclick='newTypewriterMessage("message-c", " 3333 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ", this);'>message-c</button>
-                
                 <p id=message-c></p>
                 
                 <!-- Testing with current message id? -->
-                <button onclick='setDivDisplay("message-2");'>setDivDisplay</button>
+                <!-- <button onclick='setDivDisplay("message-2");'>setDivDisplay</button>
                 <button onclick='hideChatMessage("message-2");'>hide message 2</button>
-                <button onclick='showChatMessage("message-2");'>show message 2</button>
-                
-                
+                <button onclick='showChatMessage("message-2");'>show message 2</button> -->
             </div>
         </div>
 
