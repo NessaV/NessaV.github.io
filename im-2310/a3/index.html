@@ -23,30 +23,250 @@
              <div class="inner-window">
                 <div class="chatroom-container">
 
-
+                    <!-- Recipient -->
                     <div class="chat-message" id="message-1"  
-                    onclick='newTypewriterMessage("message-a", " 1111 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing", this.id, false, this);'>
-                        <img src="img\20230513_174757_crop.jpg" alt="avatar-image">
+                    onclick='newTypewriterMessage("message-a", "Ever wondered what the meaning to life is?", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
                         <p id=message-a></p>
                     </div>
-                
-                    <div class="chat-message-right hidden" id="message-2"  onclick='newTypewriterMessage("message-b", " 2222 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ", this.id, false, this);'>
+                    
+                    <!-- Sender -->
+                    <div class="chat-message-right hidden" id="message-2"  onclick='newTypewriterMessage("message-b", "heck", this.id, false, this);'>
                         <p id=message-b></p>
-                        <img src="img\20230610_210539_crop.jpg" alt="avatar-image">
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-3"  onclick='newTypewriterMessage("message-c", "all the time! 💀", this.id, false, this);'>
+                        <p id=message-c></p>
+                        <img src="img\20230610_210539_crop.jpg" class="hidden-image" alt="Sender's avatar image">
                     </div>
         
-                    <div class="chat-message hidden" id="message-3"
-                    onclick='newTypewriterMessage("message-c", " 3333 testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ", this.id, false, this);'>
-                        <img src="img\20230513_174757_crop.jpg" alt="avatar-image">
-                        <p id=message-c></p>
-                        
-                        <!-- Testing with current message id? -->
-                        <!-- <button onclick='setDivDisplay("message-2");'>setDivDisplay</button>
-                        <button onclick='hideChatMessage("message-2");'>hide message 2</button>
-                        <button onclick='showChatMessage("message-2");'>show message 2</button> -->
+                    <!-- Recipient -->
+                    <div class="chat-message hidden" id="message-4"
+                    onclick='newTypewriterMessage("message-d", "same honestly", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-d></p>
                     </div>
-                </div>
 
+                    <div class="chat-message hidden" id="message-5"
+                    onclick='newTypewriterMessage("message-e", "everybody says, your twenties is the best time to do whatever you want", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-e></p>
+                    </div>
+
+                    <div class="chat-message hidden" id="message-6"
+                    onclick='newTypewriterMessage("message-f", "but there&#39;s just so much pressure 😭", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-f></p>
+                    </div>
+
+
+                    <div class="chat-message-right hidden" id="message-7"
+                    onclick='newTypewriterMessage("message-g", "get a job as soon as you can", this.id, false, this);'>
+                        <p id=message-g></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+
+                    <div class="chat-message-right hidden" id="message-8"
+                    onclick='newTypewriterMessage("message-h", "get that university degree", this.id, false, this);'>
+                        <p id=message-h></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+
+                    <div class="chat-message-right hidden" id="message-9"
+                    onclick='newTypewriterMessage("message-i", "land that great job and career", this.id, false, this);'>
+                        <p id=message-i></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+
+                    <!-- Recipient -->
+                    <div class="chat-message hidden" id="message-10"  onclick='newTypewriterMessage("message-k", "yeah", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-k></p>
+                    </div>
+
+                    <div class="chat-message hidden" id="message-11"  onclick='newTypewriterMessage("message-l", "but then it&#39;s like...", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-l></p>
+                    </div>
+
+                    <div class="chat-message hidden" id="message-12"  onclick='newTypewriterMessage("message-m", "once i do all those things", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-m></p>
+                    </div>
+
+                    <div class="chat-message hidden" id="message-13"  onclick='newTypewriterMessage("message-n", "when can i even do the things for me?", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-n></p>
+                    </div>
+
+                    <!-- Sender -->
+                    <div class="chat-message-right hidden" id="message-14"  onclick='newTypewriterMessage("message-o", "you get that job, and then your only days off are sickies or annual leave", this.id, false, this);'>
+                        <p id=message-o></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+
+                    <div class="chat-message-right hidden" id="message-15"  onclick='newTypewriterMessage("message-p", "which is, what, 4 weeks off a year?", this.id, false, this);'>
+                        <p id=message-p></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+
+                    <div class="chat-message-right hidden" id="message-16"  onclick='newTypewriterMessage("message-q", "that&#39;s so much time 😅", this.id, false, this);'>
+                        <p id=message-q></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+
+                    <!-- Recipient -->
+                    <div class="chat-message hidden" id="message-17"
+                    onclick='newTypewriterMessage("message-r", "right? we&#39;re at this stage where we have more time than we ever will have (until we retire, and assuming we live until that age)", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-r></p>
+                    </div>
+                    
+                    <div class="chat-message hidden" id="message-18"
+                    onclick='newTypewriterMessage("message-s", "but what can we do without money?", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-s></p>
+                    </div>
+                    
+                    <div class="chat-message hidden" id="message-19"
+                    onclick='newTypewriterMessage("message-t", "and so we&#39;ew taught that to live, we have to get a job and work until we can afford a house, start a family or retire", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-t></p>
+                    </div>
+
+                    <div class="chat-message hidden" id="message-20"
+                    onclick='newTypewriterMessage("message-u", "with inflation getting hgher and higher, and the housing market right now ...", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-u></p>
+                    </div>
+
+                    <div class="chat-message hidden" id="message-21"
+                    onclick='newTypewriterMessage("message-v", "it&#39; already taking people decades to pay off their mortage, and that&#39;s if you earn in a decent salary in the 3-digits", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-v></p>
+                    </div>
+
+
+                    <!-- Sender -->
+                    <div class="chat-message-right hidden" id="message-22"  onclick='newTypewriterMessage("message-w", "and houses are like... 3000% of what they used to cost?", this.id, false, this);'>
+                        <p id=message-w></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-23"  onclick='newTypewriterMessage("message-x", "compared to 40 years ago?", this.id, false, this);'>
+                        <p id=message-x></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+
+
+                    <!-- Recip -->
+                    <div class="chat-message hidden" id="message-23"
+                    onclick='newTypewriterMessage("message-y", "times have definitely changed", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-y></p>
+                    </div>
+                    <div class="chat-message hidden" id="message-24"
+                    onclick='newTypewriterMessage("message-z", "i feel like we&#39;re in the age of the entreprenuers", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-z></p>
+                    </div>
+
+                    <!-- Sender -->
+                    <div class="chat-message-right hidden" id="message-25"  onclick='newTypewriterMessage("message-aa", "i have been seeing all these influencers and public figures on social media", this.id, false, this);'>
+                        <p id=message-aa></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-26"  onclick='newTypewriterMessage("message-ab", "so many successful people", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-27"  onclick='newTypewriterMessage("message-ab", "you can&#39;t help but compare yourself to them", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-28"  onclick='newTypewriterMessage("message-ab", "or to people you know", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    
+                    <!-- Recip -->
+                    <div class="chat-message hidden" id="message-29"
+                    onclick='newTypewriterMessage("message-z", "haha", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-z></p>
+                    </div>
+                    <div class="chat-message hidden" id="message-24"
+                    onclick='newTypewriterMessage("message-z", "i think many families are great at doing that", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-z></p>
+                    </div>
+                    <div class="chat-message hidden" id="message-24"
+                    onclick='newTypewriterMessage("message-z", "and i do it too", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-z></p>
+                    </div>
+                    <div class="chat-message hidden" id="message-24"
+                    onclick='newTypewriterMessage("message-z", "i compare myself to others", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-z></p>
+                    </div>
+
+                    <!-- Sender -->
+                    <div class="chat-message-right hidden" id="message-26"  onclick='newTypewriterMessage("message-ab", "it&#39;s a vicious cycle", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-27"  onclick='newTypewriterMessage("message-ac", "you know...", this.id, false, this);'>
+                        <p id=message-ac></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-28"  onclick='newTypewriterMessage("message-ad", "you should only compare yourself with yourself", this.id, false, this);'>
+                        <p id=message-ad></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-29"  onclick='newTypewriterMessage("message-ae", "it obviously isn&#39;t that simple but", this.id, false, this);'>
+                        <p id=message-ae></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-30"  onclick='newTypewriterMessage("message-ab", "in the end, it comes down to you", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-31"  onclick='newTypewriterMessage("message-ab", "you&#39;re the one living your life", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-32"  onclick='newTypewriterMessage("message-ab", "you have to do things for you", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-33"  onclick='newTypewriterMessage("message-ab", "because you&#39;re in charge of your actions, and your happiness", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+
+                    <div class="chat-message hidden" id="message-24"
+                    onclick='newTypewriterMessage("message-z", "HAH", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-z></p>
+                    </div>
+                    <div class="chat-message hidden" id="message-24"
+                    onclick='newTypewriterMessage("message-z", "imagine having a conversation with yourself?", this.id, false, this);'>
+                        <img src="img\20230513_174757_crop.jpg" alt="Recipient's avatar image">
+                        <p id=message-z></p>
+                    </div>
+
+                    <div class="chat-message-right hidden" id="message-26"  onclick='newTypewriterMessage("message-ab", "WOW", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+                    <div class="chat-message-right hidden" id="message-26"  onclick='newTypewriterMessage("message-ab", "that&#39;s crazy!", this.id, false, this);'>
+                        <p id=message-ab></p>
+                        <img src="img\20230610_210539_crop.jpg" alt="Sender's avatar image">
+                    </div>
+
+
+
+                </div>
             </div>
             <div class="body-text">
                 <p>Text for my comments</p>
