@@ -1,6 +1,12 @@
+/* 
+  Alpha with Hex colour codes
+  REF: https://www.digitalocean.com/community/tutorials/css-hex-code-colors-alpha-values
+ */
 :root {
-  --primary-colour: #FF6B6B;
-  --secondary-colour: #65C6C4;
+  --sender-border-colour: #acf7f6;
+  --sender-bg-colour: #65C6C4;
+  --recipient-border-colour: #cfcfcf;
+  --recipient-bg-colour: #c0c0c0;
   --accent-colour: #FFD166;
   --background-colour: #F4F4F4;
   --text-colour: #333333;
@@ -8,137 +14,88 @@
   --border-colour: #CCCCCC;
 }
 
-body {
-  background-color: #5a5a5a;
-  font-family: Arial, sans-serif;
-  margin: bottom 0;
-  padding: 0;
+html {
+  font-family: Lato;
+}
+
+
+
+.outer-window {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
-.outer-window {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .inner-window {
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: hidden;
+  width: 400px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* Create spacing between chatroom and body text */
 }
 
-
-/* Chat room containers */
-.chatroom-container {
-  padding: 10px;
-  margin: 10px 0;
-  max-width: 80vh;
-  max-height: 80vh;
+.body-text {
+  text-align: center;
+  align-items: center;
 }
 
-/* Chat message container */
+.body-text h1 {
+  font-size: large;
+}
+
+.chatroom {
+  margin-bottom: 20px;
+}
+
 .chat-message {
   display: flex;
-  align-items: center;
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
-  max-width: 80vh;
-  max-height: 80vh;
-
+  align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .chat-message img {
-  display: flex;
   border: 2px solid;
-  border-color: #F4F4F4;
+  border-color: #f4f4f4;
   border-radius: 50%;
-  width: 8vh;
-  height: 8vh;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
+}
 
+.chat-message p {
+  border: 2px solid var(--recipient-border-colour);
+  background-color: var(--recipient-bg-colour);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0;
+  max-width: 200px;
 }
 
 .chat-message-right {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
-  border: 2px solid #dedede;
-  background-color: var(--secondary-colour);
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
-  max-width: 80vh;
-  max-height: 80vh;
-
-  /* justify-content: space-between; */
+  margin-bottom: 10px;
 }
 
 .chat-message-right img {
-  display: flex;
-  justify-content: flex-end;
   border-radius: 50%;
-  width: 8vh;
-  height: 8vh;
-  margin-right: 10px;
-
-}
-
-
-.container-right {
-  display: flex;
-  justify-content: right;
-
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
-  width: 70vh;
-}
-
-/* Style images */
-.container img {
-  float: left;
-  max-width: 60px;
-  width: 100%;
-
-  margin-right: 20px;
-  border-radius: 50%;
-  /* makes a round circle border */
-}
-
-/* Clear floats */
-.container::after {
-  /* keeps additional content in the chat container, to be displayed 'inside' of the box */
-  /* "Clearfix hack"  https://www.w3schools.com/css/css_align.asp */
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Style the right image */
-.container img.right {
-  border-radius: 5px;
-  justify-content: right;
-  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
   margin-right: 0;
 }
 
-/* Style time text */
-.time-right {
-  /* float: right; */
-  justify-content: right;
-  color: #aaa;
+.chat-message-right p {
+  border: 2px solid var(--sender-border-colour);
+  background-color: var(--sender-bg-colour);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0;
+  max-width: 200px;
 }
 
 .hidden {
